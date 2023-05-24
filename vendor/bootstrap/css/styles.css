@@ -1,13 +1,21 @@
 
+/********************************** Carousel Style ************************************************ */
 
 
-.carousel-height {
-    height: 300px;
+.carousel-wrapper {
+    height: 400px;
 }
 
 .max-height-100 {
     max-height: 50vh;
 }
+
+.carousel-item img {
+    max-width: 400px;
+    height: auto;
+}
+
+/********************************** NavBar Style ************************************************ */
 
 .navbar {
     display: flex;
@@ -23,7 +31,9 @@
     font-weight: bold;
     font-size: 3vh;
     font-style: italic;
+    padding-left: 20px;
 }
+/********************************** Search Bar Style ************************************************ */
 
 .search-bar {
     flex: 1;
@@ -43,7 +53,7 @@
     border: none;
     outline: none;
 }
-
+/********************************** Button Style ************************************************ */
 
 .btn-group {
     display: flex;
@@ -62,4 +72,18 @@
 }
 
 
+/********************************** FOOTER Style ************************************************ */
 
+
+.footer-container{
+    background-color:#01689C;
+    height: 100px;
+}
+
+
+footer-font-size{
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 3vh;
+}
