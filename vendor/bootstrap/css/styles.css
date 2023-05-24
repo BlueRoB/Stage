@@ -1,0 +1,65 @@
+
+
+
+.carousel-height {
+    height: 300px;
+}
+
+.max-height-100 {
+    max-height: 50vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #01689C;
+    padding: 15px;
+}
+
+.logo {
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 3vh;
+    font-style: italic;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+
+.search-bar input {
+    width: 700px;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 25px;
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+}
+
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+}
+
+
+.btn-icon {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.btn-icon i {
+    color: #ffffff;
+}
+
+
+
