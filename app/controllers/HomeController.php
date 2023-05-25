@@ -1,14 +1,30 @@
 <?php
 
 namespace controllers;
+
 class HomeController
 {
     public function index()
     {
+        $requestedPage = $_SERVER['REQUEST_URI'];
+        $viewPath = '';
 
-        require_once __DIR__ . '/../../view/home.php';
-        require_once __DIR__ . '/../../view/navbar.php';
+        switch ($requestedPage) {
+            case '/WEB/Stage/public/':
+                $viewPath = __DIR__ . '/../../view/home.php';
+                break;
+            case '/WEB/Stage/public/formulaire.php':
+                $viewPath = __DIR__ . '/../../view/formulaire.php';
+                break;
+            default:
+                break;
+        }
+        require_once __DIR__ . '/../../view/head.php';
 
+        require_once $viewPath;
 
+        require_once __DIR__ . '/../../view/footer.php';
+        //require_once $viewPath;
+        //require_once __DIR__ . '/../../view/navbar.php';
     }
 }
