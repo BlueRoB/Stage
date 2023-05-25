@@ -59,44 +59,45 @@
         </div>
     </div>
 </div>
+
 <div class="container-fluid mt-5">
     <div class="row justify-content-center">
-        <div class="col-md-6">
-            <h1 class="display-4 text-center">Découvrez les catégories populaires</h1>
+        <div class="col-12">
+            <h1 class="display-5 text-center pb-4">Découvrez les catégories populaires</h1>
             <div class="row mt-4">
-                <div class="col-3">
-                    <a href="#" class="category-link">
-                        <img src="../assets/test4.webp" alt="Category 1" class="img-fluid">
-                        <span class="category-label">PC portables</span>
+                <div class="col-2">
+                    <a href="#" class="category-link d-flex flex-column align-items-center">
+                        <img src="../assets/test4.webp" alt="Category 1" class="img-fluid category-image pb-2">
+                        <span class="category-label">Pc portables</span>
                     </a>
                 </div>
-                <div class="col-3">
-                    <a href="#" class="category-link">
-                        <img src="../assets/test5.webp" alt="Category 2" class="img-fluid">
+                <div class="col-2">
+                    <a href="#" class="category-link d-flex flex-column align-items-center">
+                        <img src="../assets/test5.webp" alt="Category 2" class="img-fluid category-image pb-2">
                         <span class="category-label">Smartphones</span>
                     </a>
                 </div>
-                <div class="col-3">
-                    <a href="#" class="category-link">
-                        <img src="../assets/test6.webp" alt="Category 3" class="img-fluid">
+                <div class="col-2">
+                    <a href="#" class="category-link d-flex flex-column align-items-center">
+                        <img src="../assets/test6.webp" alt="Category 3" class="img-fluid category-image pb-2">
                         <span class="category-label">Telévisions</span>
                     </a>
                 </div>
-                <div class="col-3">
-                    <a href="#" class="category-link">
-                        <img src="../assets/test7.webp" alt="Category 4" class="img-fluid">
+                <div class="col-2">
+                    <a href="#" class="category-link d-flex flex-column align-items-center">
+                        <img src="../assets/test7.webp" alt="Category 4" class="img-fluid category-image pb-2">
                         <span class="category-label">Montre connectée</span>
                     </a>
                 </div>
-                <div class="col-3">
-                    <a href="#" class="category-link">
-                        <img src="../assets/test8.webp" alt="Category 5" class="img-fluid">
-                        <span class="category-label">Appareil photo</span>
+                <div class="col-2">
+                    <a href="#" class="category-link d-flex flex-column align-items-center">
+                        <img src="../assets/test8.webp" alt="Category 5" class="img-fluid category-image pb-2">
+                        <span class="category-label">Appareil photo </span>
                     </a>
                 </div>
-                <div class="col-3">
-                    <a href="#" class="category-link">
-                        <img src="../assets/test9.webp" alt="Category 6" class="img-fluid">
+                <div class="col-2">
+                    <a href="#" class="category-link d-flex flex-column align-items-center">
+                        <img src="../assets/test9.webp" alt="Category 6" class="img-fluid category-image pb-2">
                         <span class="category-label">Consoles jeux</span>
                     </a>
                 </div>
@@ -105,23 +106,25 @@
     </div>
 </div>
 
-
-
-
-
-<footer class="fixed-bottom text-white footer-container align-items-center">
-    <div class="container d-flex justify-content-between footer-container align-items-center">
-        <div class="footer-font-size">
-            <span class="footer-font-size">Nous contacter :</span>
-            <span><i class=" fas fa-light fa-phone" style="color: #ffffff;"></i></span>
-            <span> 0123456789</span>
+<footer class="text-white footer-container mt-5">
+    <div class="container d-flex justify-content-between align-items-center pt-4">
+        <div class="h3 footer-font d-flex align-items-center">
+            <span>Nous contacter :</span>
+            <span class="ms-2"><i class="fas fa-phone" style="color: #ffffff;"></i></span>
+            <span>0123456789</span>
         </div>
-        <div>
-            <span class="email-icon fas fa-envelope"></span>
-            <span>email@example.com</span>
+        <div class="h3 footer-font d-flex align-items-center">
+            <span> <i class="fas fa-envelope" style="color: #ffffff;"></i></span>
+            <span class="ms-2">email@example.com</span>
+        </div>
+        <div class="h3 footer-font d-flex align-items-center">
+            <span>Besoin d'aide? </span>
+            <a href="form.html" class="ms-2 btn btn-light rounded-3">Formulaire</a>
         </div>
     </div>
 </footer>
+
+
 
 
 
