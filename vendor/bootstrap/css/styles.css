@@ -71,6 +71,67 @@
     color: #ffffff;
 }
 
+/********************************** Progress bar row Style ************************************************ */
+
+.container {
+    padding-top: 50px;
+}
+
+.checkout-steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.checkout-steps__item {
+    position: relative;
+    text-align: center;
+}
+
+.checkout-steps__link {
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    color: #212121;
+    padding: 10px;
+}
+
+.checkout-steps__link::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: #01689C;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 15px);
+    z-index: 1; /* Ensure the circles are on top of the line */
+}
+
+.checkout-steps__item:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    top: 5%;
+    left: -50%;
+    height: 1px;
+    width: 100%;
+    background-color: #efefef;
+    z-index: 0; /* Ensure the line is behind the circles */
+}
+
+.checkout-steps__item.step--active .checkout-steps__link {
+    color: #01689C;
+}
+
+.checkout-steps__item.checkout-steps__item--disabled .checkout-steps__link {
+    pointer-events: none;
+    color: #D8D8D8;
+}
+
+
+
+
 /********************************** Category row Style ************************************************ */
 
 

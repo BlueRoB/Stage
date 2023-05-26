@@ -18,58 +18,65 @@ require_once __DIR__ . '/navbar.php'; ?>
 
 <div class="container vh-100">
     <h1 class="text-center mt-5">Mon Panier</h1>
-    <div class="table-responsive mt-4">
-        <table class="table">
-            <thead>
-            <tr>
-                <th>Produit</th>
-                <th>Prix</th>
-                <th>Quantité</th>
-                <th>Total</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Produit 1</td>
-                <td>10 €</td>
-                <td>2</td>
-                <td>20 €</td>
-            </tr>
-            <tr>
-                <td>Produit 2</td>
-                <td>15 €</td>
-                <td>1</td>
-                <td>15 €</td>
-            </tr>
-            </tbody>
-            <tfoot>
-            <tr>
-                <td colspan="3">Total</td>
-                <td>35 €</td>
-            </tr>
-            </tfoot>
-        </table>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 checkout-steps__item step--active">
+                <span class="checkout-steps__link">Panier</span>
+            </div>
+            <div class="col-3 checkout-steps__item checkout-steps__item--disabled">
+                <span class="checkout-steps__link">Identification</span>
+            </div>
+            <div class="col-3 checkout-steps__item checkout-steps__item--disabled">
+                <span class="checkout-steps__link">Livraison</span>
+            </div>
+            <div class="col-3 checkout-steps__item checkout-steps__item--disabled">
+                <span class="checkout-steps__link">Paiement</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="row mt-4">
+        <div class="col-md-8">
+            <div class="card mb-3">
+                <div class="card-body ">
+                    <h5 class="card-title">Produit 1 <span class="float-end"><i class="fas fa-times"></i></span></h5>
+                    <p class="card-text">Description du produit 1...</p>
+                    <p class="card-text">Prix : 10 €</p>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body ">
+                    <h5 class="card-title">Produit 2 <span class="float-end"><i class="fas fa-times"></i></span></h5>
+                    <p class="card-text">Description du produit 1...</p>
+                    <p class="card-text">Prix : 10 €</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Récapitulatif</h5>
+                    <div class="mb-3">
+                        <p>Produit 1 <span class="float-end">10 €</span></p>
+                        <hr>
+                        <p>Produit 2 <span class="float-end">10 €</span></p>
+                        <hr>
+                        <p>Total : <span class="float-end">20 €</span></p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Passer la commande</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
 
-<footer class="text-white footer-container mt-5">
-    <div class="container d-flex justify-content-between align-items-center pt-4">
-        <div class="h3 footer-font d-flex align-items-center">
-            <span>Nous contacter :</span>
-            <span class="ms-2"><i class="fas fa-phone" style="color: #ffffff;"></i></span>
-            <span class="ms-2">0123456789</span>
-        </div>
-        <div class="h3 footer-font d-flex align-items-center">
-            <span> <i class="fas fa-envelope" style="color: #ffffff;"></i></span>
-            <span class="ms-2">email@example.com</span>
-        </div>
-        <div class="h3 footer-font d-flex align-items-center">
-            <span>Besoin d'aide? </span>
-            <a href="../view/formulaire.php" class="ms-2 btn btn-light rounded-3">Formulaire</a>
-        </div>
-    </div>
-</footer>
+<?php
+require_once __DIR__ . '/footer.php'; ?>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

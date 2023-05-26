@@ -1,5 +1,3 @@
-
-</body>
 <footer class="text-white footer-container mt-5">
     <div class="container d-flex justify-content-between align-items-center pt-4">
         <div class="h3 footer-font d-flex align-items-center">
@@ -17,15 +15,3 @@
         </div>
     </div>
 </footer>
-
-
-
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="../vendor/bootstrap/js/bootstrap.bundle.js"></script>
-<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
-</body>
-</html>
-

@@ -17,19 +17,19 @@ require_once __DIR__ . '/navbar.php'; ?>
         <div class="col-md-6">
             <form>
                 <div class="mb-3">
-                    <label for="firstName" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="firstName" required>
+                    <label for="prenom" class="form-label">Prénom</label>
+                    <input type="text" class="form-control" id="prenom" required>
                 </div>
                 <div class="mb-3">
-                    <label for="lastName" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="lastName" required>
+                    <label for="nom" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="nom" required>
                 </div>
                 <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
+                    <label for="email" class="form-label">Adresse Email</label>
                     <input type="email" class="form-control" id="email" required>
                 </div>
                 <div class="mb-3">
-                    <label for="phone" class="form-label">Phone Number</label>
+                    <label for="phone" class="form-label">Numéro de telephone</label>
                     <input type="tel" class="form-control" id="phone" required>
                 </div>
                 <div class="mb-3">
@@ -43,24 +43,8 @@ require_once __DIR__ . '/navbar.php'; ?>
 </div>
 
 
-</body>
-<footer class="text-white footer-container mt-5">
-    <div class="container d-flex justify-content-between align-items-center pt-4">
-        <div class="h3 footer-font d-flex align-items-center">
-            <span>Nous contacter :</span>
-            <span class="ms-2"><i class="fas fa-phone" style="color: #ffffff;"></i></span>
-            <span class="ms-2">0123456789</span>
-        </div>
-        <div class="h3 footer-font d-flex align-items-center">
-            <span> <i class="fas fa-envelope" style="color: #ffffff;"></i></span>
-            <span class="ms-2">email@example.com</span>
-        </div>
-        <div class="h3 footer-font d-flex align-items-center">
-            <span>Besoin d'aide? </span>
-            <a href="../view/formulaire.php" class="ms-2 btn btn-light rounded-3">Formulaire</a>
-        </div>
-    </div>
-</footer>
+<?php
+require_once __DIR__ . '/footer.php'; ?>
 
 
 

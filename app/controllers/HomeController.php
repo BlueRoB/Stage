@@ -19,11 +19,9 @@ class HomeController
             default:
                 break;
         }
-        require_once __DIR__ . '/../../view/head.php';
 
         require_once $viewPath;
 
-        require_once __DIR__ . '/../../view/footer.php';
         //require_once $viewPath;
         //require_once __DIR__ . '/../../view/navbar.php';
     }
