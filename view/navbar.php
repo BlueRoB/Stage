@@ -16,3 +16,48 @@
     </div>
 </nav>
 
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="./categories.php">Tous les Catégories</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarInformatique" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Informatique
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarInformatique">
+                        <li><a class="dropdown-item" href="#">Ordinateurs</a></li>
+                        <li><a class="dropdown-item" href="#">PC portables</a></li>
+                        <li><a class="dropdown-item" href="#">Périphérique</a></li>
+                        <li><a class="dropdown-item" href="#">Pièces</a></li>
+                        <li><a class="dropdown-item" href="#">Réseaux</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownImageSon" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Image & Son
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownImageSon">
+                        <li><a class="dropdown-item" href="#">Appareil photo</a></li>
+                        <li><a class="dropdown-item" href="#">Télévision</a></li>
+                        <li><a class="dropdown-item" href="#">Son numérique</a></li>
+                        <li><a class="dropdown-item" href="#">Hi-fi et enceintes</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownJeuxLoisirs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Jeux & Loisirs
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownJeuxLoisirs">
+                        <li><a class="dropdown-item" href="#">Subcategory 1</a></li>
+                        <li><a class="dropdown-item" href="#">Subcategory 2</a></li>
+                        <li><a class="dropdown-item" href="#">Subcategory 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
