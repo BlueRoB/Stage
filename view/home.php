@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Informatique</a>
+                    <a class="nav-link active" aria-current="page" href="./product.php">Informatique</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Image & Son</a>
@@ -38,8 +38,8 @@
     <div class="carousel-wrapper">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active align-content-center">
-                    <img src="../assets/test1.webp" class="d-block mx-auto max-height-100 " alt="">
+                <div  class="carousel-item active align-content-center">
+                    <img href="./product.php" src="../assets/test1.webp" class="d-block mx-auto max-height-100 " alt="">
                 </div>
                 <div class="carousel-item">
                     <img src="../assets/test2.jpeg" class="d-block mx-auto max-height-100" alt="...">
