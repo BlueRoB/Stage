@@ -46,37 +46,37 @@
             <div class="row mt-4">
                 <div class="col-2">
                     <a href="#" class="category-link d-flex flex-column align-items-center">
-                        <img src="../assets/test4.webp" alt="Category 1" class="img-fluid category-image pb-2">
+                        <img src="../assets/test4.webp" alt="Pc portables" class="img-fluid category-image" style="max-width: 200px;">
                         <span class="category-label">Pc portables</span>
                     </a>
                 </div>
                 <div class="col-2">
                     <a href="#" class="category-link d-flex flex-column align-items-center">
-                        <img src="../assets/test5.webp" alt="Category 2" class="img-fluid category-image pb-2">
+                        <img src="../assets/test5.webp" alt="Smartphones" class="img-fluid category-image pb-2" style="max-width: 200px;">
                         <span class="category-label">Smartphones</span>
                     </a>
                 </div>
                 <div class="col-2">
                     <a href="#" class="category-link d-flex flex-column align-items-center">
-                        <img src="../assets/test6.webp" alt="Category 3" class="img-fluid category-image pb-2">
+                        <img src="../assets/test6.webp" alt="Telévisions" class="img-fluid category-image pb-2" style="max-width: 200px;">
                         <span class="category-label">Telévisions</span>
                     </a>
                 </div>
                 <div class="col-2">
                     <a href="#" class="category-link d-flex flex-column align-items-center">
-                        <img src="../assets/test7.webp" alt="Category 4" class="img-fluid category-image pb-2">
+                        <img src="../assets/test7.webp" alt="Montre connectée" class="img-fluid category-image pb-2" style="max-width: 200px;">
                         <span class="category-label">Montre connectée</span>
                     </a>
                 </div>
                 <div class="col-2">
                     <a href="#" class="category-link d-flex flex-column align-items-center">
-                        <img src="../assets/test8.webp" alt="Category 5" class="img-fluid category-image pb-2">
+                        <img src="../assets/test8.webp" alt="Appareil photo" class="img-fluid category-image pb-2" style="max-width: 200px;">
                         <span class="category-label">Appareil photo </span>
                     </a>
                 </div>
                 <div class="col-2">
                     <a href="#" class="category-link d-flex flex-column align-items-center">
-                        <img src="../assets/test9.webp" alt="Category 6" class="img-fluid category-image pb-2">
+                        <img src="../assets/test9.webp" alt="Consoles jeux" class="img-fluid category-image pb-2" style="max-width: 200px;">
                         <span class="category-label">Consoles jeux</span>
                     </a>
                 </div>
@@ -93,7 +93,6 @@ require_once __DIR__ . '/footer.php'; ?>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
 </body>
 </html>

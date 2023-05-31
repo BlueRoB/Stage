@@ -44,10 +44,6 @@ require_once __DIR__ . '/navbar.php'; ?>
 <?php
 require_once __DIR__ . '/footer.php'; ?>
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="../vendor/bootstrap/js/bootstrap.bundle.js"></script>
-<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
 

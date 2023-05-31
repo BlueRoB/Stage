@@ -52,9 +52,9 @@
                         Jeux & Loisirs
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownJeuxLoisirs">
-                        <li><a class="dropdown-item" href="#">Subcategory 1</a></li>
-                        <li><a class="dropdown-item" href="#">Subcategory 2</a></li>
-                        <li><a class="dropdown-item" href="#">Subcategory 3</a></li>
+                        <li><a class="dropdown-item" href="#">Console</a></li>
+                        <li><a class="dropdown-item" href="#">Accessoires console</a></li>
+                        <li><a class="dropdown-item" href="#">Jeux Vidéo</a></li>
                     </ul>
                 </li>
             </ul>

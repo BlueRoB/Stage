@@ -180,9 +180,10 @@
 
 
 .category-image {
-    max-width: 50px;
-    height: auto;
+    max-width: 50px !important;
+    height: auto !important;
 }
+
 
 
 
