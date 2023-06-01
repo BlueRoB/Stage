@@ -25,7 +25,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarInformatique" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="category.php?category=informatique" id="navbarInformatique" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Informatique
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarInformatique">
@@ -37,7 +37,7 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownImageSon" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="category.php?category=image-son" id="navbarDropdownImageSon" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Image & Son
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownImageSon">
@@ -48,7 +48,7 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownJeuxLoisirs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="category.php?category=jeux-loisirs" id="navbarDropdownJeuxLoisirs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Jeux & Loisirs
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownJeuxLoisirs">

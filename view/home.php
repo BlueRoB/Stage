@@ -15,7 +15,7 @@
 
 <div class="container-fluid container-md">
     <div class="carousel-wrapper">
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselHomepage" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div  class="carousel-item active align-content-center">
                     <img href="./product.php" src="../assets/test1.webp" class="d-block mx-auto max-height-100 " alt="">
@@ -27,11 +27,11 @@
                     <img src="../assets/test3.jpeg" class="d-block mx-auto max-height-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHomepage" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselHomepage" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="col-2">
                     <a href="#" class="category-link d-flex flex-column align-items-center">
-                        <img src="../assets/test9.webp" alt="Consoles jeux" class="img-fluid category-image pb-2" style="max-width: 200px;">
+                        <img src="../assets/test9.webp" alt="Consoles jeux" class="img-fluid category-image pb-2" >
                         <span class="category-label">Consoles jeux</span>
                     </a>
                 </div>

@@ -176,16 +176,38 @@
 
 
 
-/********************************** Category row Style ************************************************ */
+/********************************** Category homepage row Style ************************************************ */
 
 
 .category-image {
-    max-width: 50px !important;
+    max-width: 150px !important;
     height: auto !important;
 }
 
 
 
+/********************************** Category & sub  Style ************************************************ */
+
+
+.sub-category {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sub-category .pic {
+    margin-right: 10px;
+}
+
+.sub-category .pic img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.sub-category .txt {
+    margin-bottom: 0;
+}
 
 /********************************** FOOTER Style ************************************************ */
 
