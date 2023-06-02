@@ -1,32 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="../vendor/bootstrap/css/styles.css">
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/982764073e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<?php
+require_once __DIR__ . '/navbar.php'; ?>
+
+
+
 <?php
 $category = isset($_GET['category']) ? $_GET['category'] : '';
 $subcategory = isset($_GET['subcategory']) ? $_GET['subcategory'] : '';
 
+
 function generateSubcategoryLink($category, $subcategory, $subcategoryName)
 {
     $subcategoryLink = "category.php?category=$category&subcategory=$subcategory";
-    return "<a class='toggle-list' href='$subcategoryLink'>
-        <div class='pic'>
-            <img src='https://example.com/$subcategory.jpg' alt='$subcategoryName'>
+
+    return "
+    <div class='col-md-4 mb-4'>
+        <div class='card'>
+            <a class='toggle-list card-link' href='$subcategoryLink'>
+                <img src='../assets/$subcategory.jpeg' alt='$subcategoryName' class='card-img-top' style='max-width: 200px;'>
+                <div class='card-body'>
+                    <h5 class='card-title'>$subcategoryName</h5>
+                </div>
+            </a>
         </div>
-        <h2 class='txt'><em>$subcategoryName</em></h2>
-        <span class='icon icon-arrow-bottom-bold'></span>
-    </a>";
+    </div>";
 }
+
 
 switch ($category) {
     case 'informatique':
-        echo "<h1>Informatique</h1>";
 
-        if (empty($subcategory)) {
-            echo generateSubcategoryLink('informatique', 'ordinateurs', 'Ordinateurs');
-            echo generateSubcategoryLink('informatique', 'pc-portables', 'PC portables');
-            echo generateSubcategoryLink('informatique', 'peripherique', 'Périphérique');
-            echo generateSubcategoryLink('informatique', 'pieces', 'Pièces');
-            echo generateSubcategoryLink('informatique', 'reseaux', 'Réseaux');
+
+        if (empty($subcategory)) {?>
+            <div class='container'>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1>Informatique</h1>
+                    </div>
+                </div>
+                <div class='row'>
+                    <?php
+                    echo generateSubcategoryLink('informatique', 'ordinateurs', 'Ordinateurs');
+                    echo generateSubcategoryLink('informatique', 'pc-portables', 'PC portables');
+                    echo generateSubcategoryLink('informatique', 'peripherique', 'Périphérique');
+                    echo generateSubcategoryLink('informatique', 'pieces', 'Pièces');
+                    echo generateSubcategoryLink('informatique', 'reseaux', 'Réseaux');
+                    ?>
+                </div>
+            </div>
+<?php
         } else {
             switch ($subcategory) {
                 case 'ordinateurs':
+                    echo "<div class='list'>
+                            <ul>
+                                <li>
+                                    <h3><a href='../assets/'>Boîtier PC</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href='../assets/boitier-disque-dur/'>Boîtier disque dur</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href='/informatique/ordinateurs/filtre-anti-poussiere/'>Filtre anti poussière</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href='/informatique/ordinateurs/bande-led/'>Bande LED</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href='/informatique/ordinateurs/connectique-interne/'>Connectique interne</a></h3>
+                                </li>
+                            </ul>
+                        </div>";
                     break;
                 case 'pc-portables':
                     break;
@@ -47,6 +99,7 @@ switch ($category) {
         echo "<h1>Image & Son</h1>";
 
         if (empty($subcategory)) {
+
             echo generateSubcategoryLink('image-son', 'appareil-photo', 'Appareil photo');
             echo generateSubcategoryLink('image-son', 'television', 'Télévision');
             echo generateSubcategoryLink('image-son', 'son-numerique', 'Son numérique');
@@ -101,70 +154,22 @@ switch ($category) {
 ?>
 
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Website</title>
-    <link rel="stylesheet" href="../vendor/bootstrap/css/styles.css">
-    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/982764073e.js" crossorigin="anonymous"></script>
-</head>
-<body>
-
-
-<?php
-require_once __DIR__ . '/navbar.php'; ?>
-
-
-
-
-
-<div class="container vh-100">
-    <h1>Categories</h1>
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Informatique</h2>
-            <?php foreach ($subcategory as $subcategory) { ?>
-                <a class="sub-category" href="#">
-                    <div class="pic">
-                        <img src="https://example.com/informatique/<?php echo strtolower(str_replace(' ', '-', $subcategory)); ?>/thumbnail.jpg" alt="<?php echo $subcategory; ?>">
-                    </div>
-                    <h2 class="txt"><em><?php echo $subcategory; ?></em></h2>
-                    <span class="icon icon-arrow-bottom-bold"></span>
-                </a>
-            <?php } ?>
-        </div>
-        <div class="col-md-4">
-            <h2>Image & Son</h2>
-            <?php foreach ($subcategory as $subcategory) { ?>
-                <a class="sub-category" href="#">
-                    <div class="pic">
-                        <img src="https://example.com/image-son/<?php echo strtolower(str_replace(' ', '-', $subcategory)); ?>/thumbnail.jpg" alt="<?php echo $subcategory; ?>">
-                    </div>
-                    <h2 class="txt"><em><?php echo $subcategory; ?></em></h2>
-                    <span class="icon icon-arrow-bottom-bold"></span>
-                </a>
-            <?php } ?>
-        </div>
-        <div class="col-md-4">
-            <h2>Jeux & Loisirs</h2>
-            <?php foreach ($subcategory as $subcategory) { ?>
-                <a class="sub-category" href="#">
-                    <div class="pic">
-                        <img src="https://example.com/jeux-loisirs/<?php echo strtolower(str_replace(' ', '-', $subcategory)); ?>/thumbnail.jpg" alt="<?php echo $subcategory; ?>">
-                    </div>
-                    <h2 class="txt"><em><?php echo $subcategory; ?></em></h2>
-                    <span class="icon icon-arrow-bottom-bold"></span>
-                </a>
-            <?php } ?>
-        </div>
+<div class='container'>
+    <div class="row vh-100">
+        <ul>
+            <?php foreach ($subcategory as $subcategoryName => $subcategoryParam): ?>
+                <li>
+                    <h3><a href="/informatique/<?php echo $category; ?>/<?php echo $subcategoryParam; ?>/"><?php echo $subcategoryName; ?></a></h3>
+                </li>
+            <?php endforeach; ?>
+        </ul>
     </div>
 </div>
-
-
-
 <?php
 require_once __DIR__ . '/footer.php'; ?>
+
+
+
 
 
 

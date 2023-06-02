@@ -29,7 +29,7 @@
                         Informatique
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarInformatique">
-                        <li><a class="dropdown-item" href="#">Ordinateurs</a></li>
+                        <li><a class="dropdown-item" href="categories.php?category=informatique">Ordinateurs</a></li>
                         <li><a class="dropdown-item" href="#">PC portables</a></li>
                         <li><a class="dropdown-item" href="#">Périphérique</a></li>
                         <li><a class="dropdown-item" href="#">Pièces</a></li>
