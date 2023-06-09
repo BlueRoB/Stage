@@ -45,7 +45,7 @@
             <h1 class="display-5 text-center pb-4">Découvrez les catégories populaires</h1>
             <div class="row mt-4">
                 <div class="col-2">
-                    <a href="#" class="category-link d-flex flex-column align-items-center">
+                    <a href="./product.php" class="category-link d-flex flex-column align-items-center">
                         <img src="../assets/test4.webp" alt="Pc portables" class="img-fluid category-image" style="max-width: 200px;">
                         <span class="category-label">Pc portables</span>
                     </a>

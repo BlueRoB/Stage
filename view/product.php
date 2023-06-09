@@ -8,11 +8,9 @@
 </head>
 <body>
 
-
 <?php
-require_once __DIR__ . '/navbar.php'; ?>
-
-
+require_once __DIR__ . '/navbar.php';
+?>
 
 <div class="container product-page vh-100">
     <div class="row">
@@ -38,20 +36,19 @@ require_once __DIR__ . '/navbar.php'; ?>
                 <p class="product-price">$299.99</p>
                 <hr>
                 <div class="product-actions">
-                    <button class="btn btn-primary">Ajouter au panier</button>
+                    <form action="./panier.php" method="post">
+                        <button type="submit" class="btn btn-primary">Ajouter au panier</button>
+                        <input type="hidden" name="product_id" value="123">
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-
-
-
 <?php
-require_once __DIR__ . '/footer.php'; ?>
-
+require_once __DIR__ . '/footer.php';
+?>
 
 </body>
 </html>
-
