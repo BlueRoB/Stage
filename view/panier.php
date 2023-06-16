@@ -1,14 +1,13 @@
 <?php
 session_start();
 
-// Check if the form was submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['product_id'])) {
         $product_id = $_POST['product_id'];
 
         $_SESSION['cart'][] = $product_id;
 
-        header('Location: product.php?added=true');
+        //header('Location: product.php?added=true');
         exit;
     }
 }
@@ -24,9 +23,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
 
+<div class="wrapper">
+
 <?php require_once __DIR__ . '/navbar.php'; ?>
 
-<div class="container vh-100">
+<div class="container">
     <h1 class="text-center mt-5">Mon Panier</h1>
     <div class="container">
         <div class="row">
@@ -99,6 +100,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </div>
 
 <?php require_once __DIR__ . '/footer.php'; ?>
-
+</div>
 </body>
 </html>

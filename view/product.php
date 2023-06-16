@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/982764073e.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="wrapper">
 
 <?php
 require_once __DIR__ . '/navbar.php';
@@ -49,6 +50,6 @@ require_once __DIR__ . '/navbar.php';
 <?php
 require_once __DIR__ . '/footer.php';
 ?>
-
+</div>
 </body>
 </html>

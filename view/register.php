@@ -7,12 +7,13 @@
     <script src="https://kit.fontawesome.com/982764073e.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="wrapper">
 
 
 <?php
 require_once __DIR__ . '/navbar.php'; ?>
 
-<div class="container d-flex justify-content-center align-items-center vh-100">
+<div class="container d-flex justify-content-center align-items-center">
     <div class="w-50">
         <h1>INSCRIVEZ-VOUS :</h1>
         <form>
@@ -43,7 +44,7 @@ require_once __DIR__ . '/navbar.php'; ?>
 
 <?php
 require_once __DIR__ . '/footer.php'; ?>
-
+</div>
 </body>
 </html>
 

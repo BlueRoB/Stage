@@ -209,12 +209,35 @@
     margin-bottom: 0;
 }
 
+/********************************** Viewpoint Style ************************************************ */
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+    margin-bottom: -100px;
+}
+
+.custom-container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-row {
+    flex: 1;
+}
+
 /********************************** FOOTER Style ************************************************ */
 
-
 .footer-container{
-    background-color:#01689C;
-    height: 100px;
+    background-color: #01689C;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
 

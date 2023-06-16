@@ -61,11 +61,11 @@ switch ($category) {
             switch ($subcategory) {
                 case 'ordinateurs':
                     $subcategories = [
-                        ['name' => 'Boîtier PC', 'image' => '../assets/boitier-pc.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=ordinateurs"],
-                        ['name' => 'Boîtier disque dur', 'image' => '../assets/boitier-disque-dur.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=ordinateurs"],
-                        ['name' => 'Filtre anti poussière', 'image' => '', 'subcategoryLink' => "category.php?category=informatique&subcategory=ordinateurs"],
-                        ['name' => 'Bande LED', 'image' => '', 'subcategoryLink' => "category.php?category=informatique&subcategory=ordinateurs"],
-                        ['name' => 'Connectique interne', 'image' => '', 'subcategoryLink' => "category.php?category=informatique&subcategory=ordinateurs"]
+                        ['name' => 'Boîtier PC', 'image' => '../assets/boitier-pc.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=boitier-pc"],
+                        ['name' => 'Boîtier disque dur', 'image' => '../assets/boitier-disque-dur.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=boitier-disque-dur"],
+                        ['name' => 'Filtre anti poussière', 'image' => '', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=filtre-anti-poussiere"],
+                        ['name' => 'Bande LED', 'image' => '', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=bande-led"],
+                        ['name' => 'Connectique interne', 'image' => '', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=connectique-interne"]
                     ];
 
                     echo "<div class='container  vh-100'>
@@ -98,11 +98,11 @@ switch ($category) {
                     break;
                 case 'pc-portables':
                     $subcategories = [
-                        ['name' => 'Pc Windows', 'image' => '../assets/pc-windows.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=pc-portables"],
-                        ['name' => 'MacBook', 'image' => '../assets/macbook.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=pc-portables"],
-                        ['name' => 'Sac, housse', 'image' => '', 'subcategoryLink' => "category.php?category=informatique&subcategory=pc-portables"],
-                        ['name' => 'Accessoires Pc portable', 'image' => '', 'subcategoryLink' => "category.php?category=informatique&subcategory=pc-portables"],
-                        ['name' => 'Périphérique pc portable', 'image' => '', 'subcategoryLink' => "category.php?category=informatique&subcategory=pc-portables"]
+                        ['name' => 'Pc Windows', 'image' => '../assets/pc-windows.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=pc-portables"],
+                        ['name' => 'MacBook', 'image' => '../assets/macbook.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=pc-portables"],
+                        ['name' => 'Sac, housse', 'image' => '', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=pc-portables"],
+                        ['name' => 'Accessoires Pc portable', 'image' => '', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=pc-portables"],
+                        ['name' => 'Périphérique pc portable', 'image' => '', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=pc-portables"]
                     ];
 
                     echo "<div class='container  vh-100'>
@@ -134,11 +134,11 @@ switch ($category) {
                     break;
                 case 'peripherique':
                     $subcategories = [
-                        ['name' => 'Ecran Ordinateur', 'image' => '../assets/ecran-ordinateur.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=ecran-ordinateur"],
-                        ['name' => 'Imprimante', 'image' => '../assets/imprimante.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=imprimante"],
-                        ['name' => 'Stockage Externe', 'image' => '', 'subcategoryLink' => "category.php?category=informatique&subcategory=stockage-externe"],
-                        ['name' => 'Clavier et Souris', 'image' => '', 'subcategoryLink' => "category.php?category=informatique&subcategory=clavier-souris"],
-                        ['name' => 'Casque et micro', 'image' => '', 'subcategoryLink' => "category.php?category=informatique&subcategory=casque-micro"]
+                        ['name' => 'Ecran Ordinateur', 'image' => '../assets/ecran-ordinateur.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=ecran-ordinateur"],
+                        ['name' => 'Imprimante', 'image' => '../assets/imprimante.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=imprimante"],
+                        ['name' => 'Stockage Externe', 'image' => '', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=stockage-externe"],
+                        ['name' => 'Clavier et Souris', 'image' => '', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=clavier-souris"],
+                        ['name' => 'Casque et micro', 'image' => '', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=casque-micro"]
                     ];
 
                     echo "<div class='container  vh-100'>
@@ -170,11 +170,11 @@ switch ($category) {
                     break;
                 case 'pieces':
                     $subcategories = [
-                        ['name' => 'Processeur', 'image' => '../assets/processeur.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=processeur"],
-                        ['name' => 'Carte mère', 'image' => '../assets/carte-mère.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=carte-mère"],
-                        ['name' => 'Cartes graphiques', 'image' => '../assets/cartes-graphiques.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=cartes-graphiques"],
-                        ['name' => 'Boîtier', 'image' => '../assets/boitier.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=boitier"],
-                        ['name' => 'Alimentation PC', 'image' => '../assets/alimentation-pc.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=alimentation-pc"]
+                        ['name' => 'Processeur', 'image' => '../assets/processeur.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=processeur"],
+                        ['name' => 'Carte mère', 'image' => '../assets/carte-mère.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=carte-mère"],
+                        ['name' => 'Cartes graphiques', 'image' => '../assets/cartes-graphiques.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=cartes-graphiques"],
+                        ['name' => 'Boîtier', 'image' => '../assets/boitier.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=boitier"],
+                        ['name' => 'Alimentation PC', 'image' => '../assets/alimentation-pc.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=alimentation-pc"]
                     ];
 
                     echo "<div class='container  vh-100'>
@@ -206,11 +206,11 @@ switch ($category) {
                     break;
                 case 'reseaux':
                     $subcategories = [
-                        ['name' => 'Répéteur Wi-Fi', 'image' => '../assets/repeteur-wifi.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=repeteur-wifi"],
-                        ['name' => 'Modem & routeur', 'image' => '../assets/modem-routeur.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=modem-routeur"],
-                        ['name' => 'Point accès WiFi', 'image' => '../assets/cartes-graphiques.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=cartes-graphiques"],
-                        ['name' => 'Boîtier', 'image' => '../assets/boitier.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=boitier"],
-                        ['name' => 'Alimentation PC', 'image' => '../assets/alimentation-pc.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=alimentation-pc"]
+                        ['name' => 'Répéteur Wi-Fi', 'image' => '../assets/repeteur-wifi.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=repeteur-wifi"],
+                        ['name' => 'Modem & routeur', 'image' => '../assets/modem-routeur.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=modem-routeur"],
+                        ['name' => 'Point accès WiFi', 'image' => '../assets/cartes-graphiques.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=cartes-graphiques"],
+                        ['name' => 'Boîtier', 'image' => '../assets/boitier.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=boitier"],
+                        ['name' => 'Alimentation PC', 'image' => '../assets/alimentation-pc.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=alimentation-pc"]
                     ];
 
                     echo "<div class='container  vh-100'>
@@ -271,10 +271,10 @@ switch ($category) {
             switch ($subcategory) {
                 case 'appareil-photo':
                     $subcategories = [
-                        ['name' => 'Appareil Photo', 'image' => '../assets/apparaeil-photo.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=apparaeil-photo"],
-                        ['name' => 'Accessoire Photo', 'image' => '../assets/accessoire-photo.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=accessoire-photo"],
-                        ['name' => 'Carte mémoire', 'image' => '../assets/carte-memoire.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=carte-memoire"],
-                        ['name' => 'Objectif appareil photo', 'image' => '../assets/objectif-appareil-photo.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=objectif-appareil-photo"]
+                        ['name' => 'Appareil Photo', 'image' => '../assets/apparaeil-photo.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=apparaeil-photo"],
+                        ['name' => 'Accessoire Photo', 'image' => '../assets/accessoire-photo.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=accessoire-photo"],
+                        ['name' => 'Carte mémoire', 'image' => '../assets/carte-memoire.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=carte-memoire"],
+                        ['name' => 'Objectif appareil photo', 'image' => '../assets/objectif-appareil-photo.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=objectif-appareil-photo"]
                     ];
 
                     echo "<div class='container vh-100'>
@@ -306,9 +306,9 @@ switch ($category) {
                     break;
                 case 'television':
                     $subcategories = [
-                        ['name' => 'TV', 'image' => '../assets/tv.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=tv"],
-                        ['name' => 'Adaptateur TNT & Sat', 'image' => '../assets/adaptateur-tnt-sat.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=adaptateur-tnt-sat"],
-                        ['name' => 'Télécommande', 'image' => '../assets/telecommande.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=telecommande"]
+                        ['name' => 'TV', 'image' => '../assets/tv.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=tv"],
+                        ['name' => 'Adaptateur TNT & Sat', 'image' => '../assets/adaptateur-tnt-sat.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=adaptateur-tnt-sat"],
+                        ['name' => 'Télécommande', 'image' => '../assets/telecommande.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=telecommande"]
                     ];
 
                     echo "<div class='container  vh-100'>
@@ -340,9 +340,9 @@ switch ($category) {
                     break;
                 case 'son-numerique':
                     $subcategories = [
-                        ['name' => 'Casque', 'image' => '../assets/casque.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=casque"],
-                        ['name' => 'Enceinte Bluetooth', 'image' => '../assets/enceinte-bluetooth.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=enceinte-bluetooth"],
-                        ['name' => 'Auto Radio', 'image' => '../assets/auto-radio.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=auto-radio"]
+                        ['name' => 'Casque', 'image' => '../assets/casque.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=casque"],
+                        ['name' => 'Enceinte Bluetooth', 'image' => '../assets/enceinte-bluetooth.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=enceinte-bluetooth"],
+                        ['name' => 'Auto Radio', 'image' => '../assets/auto-radio.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=auto-radio"]
                     ];
 
                     echo "<div class='container  vh-100'>
@@ -390,9 +390,9 @@ switch ($category) {
             switch ($subcategory) {
                 case 'console':
                     $subcategories = [
-                        ['name' => 'Console PS5', 'image' => '../assets/console-ps5.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=console-ps5"],
-                        ['name' => 'Console Xbox Series', 'image' => '../assets/console-xbox-series.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=console-xbox-series"],
-                        ['name' => 'Console Nintendo Switch', 'image' => '../assets/console-nintendo-switch.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=console-nintendo-switch"]
+                        ['name' => 'Console PS5', 'image' => '../assets/console-ps5.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=console-ps5"],
+                        ['name' => 'Console Xbox Series', 'image' => '../assets/console-xbox-series.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=console-xbox-series"],
+                        ['name' => 'Console Nintendo Switch', 'image' => '../assets/console-nintendo-switch.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=console-nintendo-switch"]
                     ];
 
                     echo "<div class='container  vh-100'>
@@ -424,9 +424,9 @@ switch ($category) {
                     break;
                 case 'accessoires-console':
                     $subcategories = [
-                        ['name' => 'Accessoires PS5', 'image' => '../assets/accessoires-ps5.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=accessoires-ps5"],
-                        ['name' => 'Accessoires Xbox Series', 'image' => '../assets/accessoires-xbox-series.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=accessoires-xbox-series"],
-                        ['name' => 'Accessoires Nintendo Switch', 'image' => '../assets/accessoires-nintendo-switch.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=accessoires-nintendo-switch"]
+                        ['name' => 'Accessoires PS5', 'image' => '../assets/accessoires-ps5.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=accessoires-ps5"],
+                        ['name' => 'Accessoires Xbox Series', 'image' => '../assets/accessoires-xbox-series.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=accessoires-xbox-series"],
+                        ['name' => 'Accessoires Nintendo Switch', 'image' => '../assets/accessoires-nintendo-switch.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=accessoires-nintendo-switch"]
                     ];
 
                     echo "<div class='container  vh-100'>
@@ -458,9 +458,9 @@ switch ($category) {
                     break;
                 case 'jeux-video':
                     $subcategories = [
-                        ['name' => 'Jeux PS5', 'image' => '../assets/jeux-ps5.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=jeux-ps5"],
-                        ['name' => 'Jeux Xbox Series', 'image' => '../assets/jeux-xbox-series.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=jeux-xbox-series"],
-                        ['name' => 'Jeux Nintendo Switch', 'image' => '../assets/jeux-nintendo-switch.jpeg', 'subcategoryLink' => "category.php?category=informatique&subcategory=jeux-nintendo-switch"]
+                        ['name' => 'Jeux PS5', 'image' => '../assets/jeux-ps5.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=jeux-ps5"],
+                        ['name' => 'Jeux Xbox Series', 'image' => '../assets/jeux-xbox-series.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=jeux-xbox-series"],
+                        ['name' => 'Jeux Nintendo Switch', 'image' => '../assets/jeux-nintendo-switch.jpeg', 'subcategoryLink' => "product_listing.php?category=informatique&subcategory=jeux-nintendo-switch"]
                     ];
 
                     echo "<div class='container  vh-100'>
