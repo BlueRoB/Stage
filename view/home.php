@@ -13,6 +13,26 @@
     require_once __DIR__ . '/navbar.php'; ?>
 
 
+    <?php
+    // Replace the following values with your actual database credentials
+    $host = 'localhost';
+    $user = 'Ecommerce';
+    $password = 'Stage2023*';
+    $database = 'E-commerce';
+
+    // Attempt to connect to the database
+    $connection = mysqli_connect($host, $user, $password, $database);
+
+    // Check if the connection was successful
+    if (!$connection) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+
+    echo "Connected successfully to the database.";
+
+    // Close the database connection
+    mysqli_close($connection);
+    ?>
 
 
 <div class="container-fluid container-md">
