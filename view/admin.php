@@ -59,18 +59,16 @@ if (!$connection) {
         }
     }
 
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        if (isset($_POST['delete_product'])) {
-            $product_id = $_POST['product_id'];
-
-            $product = mysqli_fetch_assoc(mysqli_query($connection, "SELECT * FROM products WHERE product_id = '$product_id'"));
-
-            ?>
-            <script>
-                if (confirm("Are you sure you want to delete the product?\n\nProduct ID: <?php echo $product['product_id']; ?>\nProduct Name: <?php echo $product['product_name']; ?>")) {
-                    document.getElementById("delete-product-<?php echo $product['product_id']; ?>").submit();
-                }
-            </script>
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['delete_product'])) {
+        $product_id = $_POST['product_id'];
+        $product = mysqli_fetch_assoc(mysqli_query($connection, "SELECT * FROM products WHERE product_id = '$product_id'"));
+        ?>
+        <script>
+            if (confirm("Are you sure you want to delete the product?\n\nProduct ID: <?php echo $product['product_id']; ?>\nProduct Name: <?php echo $product['product_name']; ?>")) {
+                document.getElementById("delete-form-<?php echo $product['product_id']; ?>").submit();
+            }
+        </script>
         <?php
         } elseif (isset($_POST['edit_product'])) {
         $product_id = $_POST['product_id'];
@@ -119,7 +117,7 @@ if (!$connection) {
     function displayAddProductForm() {
         ?>
         <h2>Add Product</h2>
-        <form method="POST" action="add.product.php">
+        <form method="POST" action="add.product.php" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="productName" class="form-label">Product Name</label>
                 <input type="text" class="form-control" id="productName" name="product_name" required>
@@ -131,6 +129,10 @@ if (!$connection) {
             <div class="mb-3">
                 <label for="productDescription" class="form-label">Product Description</label>
                 <textarea class="form-control" id="productDescription" name="product_description" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="product_image">Product Image:</label>
+                <input type="file" id="image" name="product_image" accept="image/*"><br><br>
             </div>
             <div class="mb-3">
                 <label for="category" class="form-label">Category</label>
@@ -182,64 +184,34 @@ if (!$connection) {
         <?php
     }
 
-        function displayViewProductsTable()
-        {
-            $products = getProducts();
-            ?>
-            <h2>View Products</h2>
-            <table class="table">
-                <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Price</th>
-                    <th>Description</th>
-                    <th>Action</th>
-                </tr>
-                </thead>
-                <tbody>
-                <?php foreach ($products as $product) { ?>
-                    <tr>
-                        <td><?php echo $product['product_id']; ?></td>
-                        <td><?php echo $product['product_name']; ?></td>
-                        <td><?php echo $product['price']; ?></td>
-                        <td><?php echo $product['description']; ?></td>
-                        <td>
-                            <form method="POST">
-                                <input type="hidden" name="product_id" value="<?php echo $product['product_id']; ?>">
-                                <button type="submit" name="edit_product" class="btn btn-primary btn-sm">Edit</button>
-                                <button type="submit" name="delete_product" class="btn btn-danger btn-sm">Delete</button>
-                            </form>
-                        </td>
-                    </tr>
-                <?php } ?>
-                </tbody>
-            </table>
-            <?php
-        }
-
-    function displayUserManagementTable() {
-        $users = getUsers();
+    function displayViewProductsTable()
+    {
+        $products = getProducts();
         ?>
-        <h2>User Management</h2>
+        <h2>View Products</h2>
         <table class="table">
             <thead>
             <tr>
                 <th>ID</th>
                 <th>Name</th>
-                <th>Email</th>
+                <th>Price</th>
+                <th>Description</th>
                 <th>Action</th>
             </tr>
             </thead>
             <tbody>
-            <?php foreach ($users as $user) { ?>
+            <?php foreach ($products as $product) { ?>
                 <tr>
-                    <td><?php echo $user['id']; ?></td>
-                    <td><?php echo $user['name']; ?></td>
-                    <td><?php echo $user['email']; ?></td>
+                    <td><?php echo $product['product_id']; ?></td>
+                    <td><?php echo $product['product_name']; ?></td>
+                    <td><?php echo $product['price']; ?></td>
+                    <td><?php echo $product['description']; ?></td>
                     <td>
-                        <a href="#">Edit</a> |
-                        <a href="#">Delete</a>
+                        <form method="POST" id="delete-form-<?php echo $product['product_id']; ?>" action="delete_product.php">
+                            <input type="hidden" name="product_id" value="<?php echo $product['product_id']; ?>">
+                            <button type="submit" name="edit_product" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="submit" name="delete_product" class="btn btn-danger btn-sm">Delete</button>
+                        </form>
                     </td>
                 </tr>
             <?php } ?>
@@ -247,6 +219,36 @@ if (!$connection) {
         </table>
         <?php
     }
+
+    function displayUserManagementTable() {
+            $users = getUsers();
+            ?>
+            <h2>User Management</h2>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php foreach ($users as $user) { ?>
+                    <tr>
+                        <td><?php echo $user['id']; ?></td>
+                        <td><?php echo $user['name']; ?></td>
+                        <td><?php echo $user['email']; ?></td>
+                        <td>
+                            <a href="#">Edit</a> |
+                            <a href="#">Delete</a>
+                        </td>
+                    </tr>
+                <?php } ?>
+                </tbody>
+            </table>
+            <?php
+        }
     ?>
 
     <!DOCTYPE html>
