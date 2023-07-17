@@ -1,19 +1,52 @@
+<?php
+// Check if a session has not already been started
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+?>
+
 <nav class="navbar">
     <a href="home.php" class="logo">Logo</a>
     <div class="search-bar">
         <input type="text" class="form-control rounded-5" placeholder="Search...">
     </div>
-    <div class="btn-group">
-        <a href="login.php" class="btn btn-icon">
-            <i class="fas fa-light fa-user fa-xs"></i>
-        </a>
-        <button type="button" class="btn btn-icon">
-            <i class="fas fa-heart"></i>
-        </button>
-        <a href="panier.php" class="btn btn-icon">
-            <i class="fas fa-basket-shopping"></i>
-        </a>
-    </div>
+
+    <?php
+    // Check if the user is logged in and the session variable is set
+    if (!isset($_SESSION['user_id'])) {
+        // User is not logged in
+        echo '
+        <div class="btn-group">
+            <a href="login.php" class="btn btn-icon">
+                <i class="fas fa-light fa-user fa-xs"></i>
+            </a>
+            <button type="button" class="btn btn-icon">
+                <i class="fas fa-heart"></i>
+            </button>
+            <a href="panier.php" class="btn btn-icon">
+                <i class="fas fa-basket-shopping"></i>
+            </a>
+        </div>
+        ';
+    } else {
+        // User is logged in
+        $user_name = $_SESSION['user_name'];
+        echo '
+        <div class="btn-group">
+            <span class="navbar-text">Welcome, ' . $user_name . '</span>
+            <button type="button" class="btn btn-icon">
+                <i class="fas fa-heart"></i>
+            </button>
+            <a href="panier.php" class="btn btn-icon">
+                <i class="fas fa-basket-shopping"></i>
+            </a>
+            <a href="logout.php" class="btn btn-icon">
+                <i class="fas fa-light fa-sign-out-alt fa-xs"></i>
+            </a>
+        </div>
+        ';
+    }
+    ?>
 </nav>
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -29,7 +62,7 @@
                         Informatique
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarInformatique">
-                        <li><a class="dropdown-item" href="categories.php?category=informatique&subcategory=ordinateurs">Ordinateurs</a></li>
+                        <li><a class="dropdown-item" href="categories.php?category=informatique&subcategory=ordinateur">Ordinateurs</a></li>
                         <li><a class="dropdown-item" href="categories.php?category=informatique&subcategory=pc-portables">PC portables</a></li>
                         <li><a class="dropdown-item" href="categories.php?category=informatique&subcategory=peripherique">Périphérique</a></li>
                         <li><a class="dropdown-item" href="categories.php?category=informatique&subcategory=pieces">Pièces</a></li>

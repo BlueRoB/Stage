@@ -207,9 +207,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <td><?php echo $product['price']; ?></td>
                     <td><?php echo $product['description']; ?></td>
                     <td>
+                        <form method="POST" id="delete-form-<?php echo $product['product_id']; ?>" action="edit_product.php">
+                        <input type="hidden" name="product_id" value="<?php echo $product['product_id']; ?>">
+                        <button type="submit" name="edit_product" class="btn btn-primary btn-sm">Edit</button>
+                        </form>
                         <form method="POST" id="delete-form-<?php echo $product['product_id']; ?>" action="delete_product.php">
                             <input type="hidden" name="product_id" value="<?php echo $product['product_id']; ?>">
-                            <button type="submit" name="edit_product" class="btn btn-primary btn-sm">Edit</button>
                             <button type="submit" name="delete_product" class="btn btn-danger btn-sm">Delete</button>
                         </form>
                     </td>

@@ -1,16 +1,22 @@
 <?php
 session_start();
 
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['product_id'])) {
         $product_id = $_POST['product_id'];
 
         $_SESSION['cart'][] = $product_id;
 
-        //header('Location: product.php?added=true');
+        // Store the referring URL in a session variable
+        $_SESSION['last_page'] = $_SERVER['HTTP_REFERER'];
+
+        header('Location: ' . $_SESSION['last_page']);
         exit;
     }
 }
+?>
+
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <?php require_once __DIR__ . '/navbar.php'; ?>
 
-<div class="container">
+<div class="content container">
     <h1 class="text-center mt-5">Mon Panier</h1>
     <div class="container">
         <div class="row">
@@ -98,8 +104,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </div>
 </div>
-
-<?php require_once __DIR__ . '/footer.php'; ?>
+</div>
+<div class="footer">
+    <?php require_once __DIR__ . '/footer.php'; ?>
 </div>
 </body>
 </html>

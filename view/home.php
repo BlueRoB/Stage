@@ -9,8 +9,7 @@
 <body>
 <div class="wrapper">
 
-<?php
-    require_once __DIR__ . '/navbar.php'; ?>
+
 
 
     <?php
@@ -28,14 +27,14 @@
         die("Connection failed: " . mysqli_connect_error());
     }
 
-    echo "Connected successfully to the database.";
 
     // Close the database connection
     mysqli_close($connection);
     ?>
+    <?php
+    require_once __DIR__ . '/navbar.php'; ?>
 
-
-<div class="container-fluid container-md">
+<div class="content container-fluid container-md">
     <div class="carousel-wrapper">
         <div id="carouselHomepage" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -108,11 +107,11 @@
 </div>
 
 
-<?php
-require_once __DIR__ . '/footer.php'; ?>
 </div>
 
-
+<div class="footer">
+    <?php require_once __DIR__ . '/footer.php'; ?>
+</div>
 
 
 
