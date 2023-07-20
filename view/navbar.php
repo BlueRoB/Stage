@@ -1,20 +1,26 @@
 <?php
-// Check if a session has not already been started
+/**
+ * @file navbar.php
+ * @brief Barre de navigation du site.
+ */
+
+// Vérifier si une session n'a pas encore été démarrée
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 ?>
 
 <nav class="navbar">
+    <!-- Logo du site -->
     <a href="home.php" class="logo">Logo</a>
     <div class="search-bar">
-        <input type="text" class="form-control rounded-5" placeholder="Search...">
+        <input type="text" class="form-control rounded-5" placeholder="Rechercher...">
     </div>
 
     <?php
-    // Check if the user is logged in and the session variable is set
+    // Vérifier si l'utilisateur est connecté et que la variable de session est définie
     if (!isset($_SESSION['user_id'])) {
-        // User is not logged in
+        // L'utilisateur n'est pas connecté
         echo '
         <div class="btn-group">
             <a href="login.php" class="btn btn-icon">
@@ -29,11 +35,11 @@ if (session_status() == PHP_SESSION_NONE) {
         </div>
         ';
     } else {
-        // User is logged in
+        // L'utilisateur est connecté
         $user_name = $_SESSION['user_name'];
         echo '
         <div class="btn-group">
-            <span class="navbar-text">Welcome, ' . $user_name . '</span>
+            <span class="navbar-text">Bienvenue, ' . $user_name . '</span>
             <button type="button" class="btn btn-icon">
                 <i class="fas fa-heart"></i>
             </button>
@@ -51,42 +57,46 @@ if (session_status() == PHP_SESSION_NONE) {
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="./categories.php?category=informatique">Tous les Catégories</a>
+        <!-- Liens vers les catégories principales -->
+        <a class="navbar-brand" href="./categories.php?category=1">Tous les Catégories</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
+                <!-- Catégorie Informatique -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="categories.php?category=informatique" id="navbarInformatique" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="categories.php?category=1" id="navbarInformatique" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Informatique
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarInformatique">
-                        <li><a class="dropdown-item" href="categories.php?category=informatique&subcategory=ordinateur">Ordinateurs</a></li>
-                        <li><a class="dropdown-item" href="categories.php?category=informatique&subcategory=pc-portables">PC portables</a></li>
-                        <li><a class="dropdown-item" href="categories.php?category=informatique&subcategory=peripherique">Périphérique</a></li>
-                        <li><a class="dropdown-item" href="categories.php?category=informatique&subcategory=pieces">Pièces</a></li>
-                        <li><a class="dropdown-item" href="categories.php?category=informatique&subcategory=reseaux">Réseaux</a></li>
+                        <li><a class="dropdown-item" href="categories.php?category=1&subcategory=1">Ordinateurs</a></li>
+                        <li><a class="dropdown-item" href="categories.php?category=1&subcategory=2">PC portables</a></li>
+                        <li><a class="dropdown-item" href="categories.php?category=1&subcategory=3">Périphérique</a></li>
+                        <li><a class="dropdown-item" href="categories.php?category=1&subcategory=4">Pièces</a></li>
+                        <li><a class="dropdown-item" href="categories.php?category=1&subcategory=5">Réseaux</a></li>
                     </ul>
                 </li>
+                <!-- Catégorie Image & Son -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="categories.php?category=image-son" id="navbarDropdownImageSon" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="categories.php?category=2" id="navbarDropdownImageSon" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Image & Son
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownImageSon">
-                        <li><a class="dropdown-item" href="categories.php?category=image-son&subcategory=appareil-photo">Appareil photo</a></li>
-                        <li><a class="dropdown-item" href="categories.php?category=image-son&subcategory=television">Télévision</a></li>
-                        <li><a class="dropdown-item" href="categories.php?category=image-son&subcategory=son-numerique">Son numérique</a></li>
+                        <li><a class="dropdown-item" href="categories.php?category=2&subcategory=6">Appareil photo</a></li>
+                        <li><a class="dropdown-item" href="categories.php?category=2&subcategory=7">Télévision</a></li>
+                        <li><a class="dropdown-item" href="categories.php?category=2&subcategory=8">Son numérique</a></li>
                     </ul>
                 </li>
+                <!-- Catégorie Jeux & Loisirs -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="categories.php?category=jeux-loisirs" id="navbarDropdownJeuxLoisirs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="categories.php?category=3" id="navbarDropdownJeuxLoisirs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Jeux & Loisirs
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownJeuxLoisirs">
-                        <li><a class="dropdown-item" href="categories.php?category=jeux-loisirs&subcategory=console">Console</a></li>
-                        <li><a class="dropdown-item" href="categories.php?category=jeux-loisirs&subcategory=accessoires-console">Accessoires console</a></li>
-                        <li><a class="dropdown-item" href="categories.php?category=jeux-loisirs&subcategory=jeux-video">Jeux Vidéo</a></li>
+                        <li><a class="dropdown-item" href="categories.php?category=3&subcategory=9">Console</a></li>
+                        <li><a class="dropdown-item" href="categories.php?category=3&subcategory=10">Accessoires console</a></li>
+                        <li><a class="dropdown-item" href="categories.php?category=3&subcategory=11">Jeux Vidéo</a></li>
                     </ul>
                 </li>
             </ul>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_8c1195e4829fa17630c4278c41da729a" xml:lang="en-US">
+<title>/Applications Directory Reference</title>
+<indexterm><primary>/Applications Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_132e8db45897f9f83d22ed65f389d5cf">XAMPP</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

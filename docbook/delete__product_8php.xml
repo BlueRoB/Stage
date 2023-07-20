@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_delete__product_8php" xml:lang="en-US">
+<title>/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/delete_product.php File Reference</title>
+<indexterm><primary>/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/delete_product.php</primary></indexterm>
+<para>
+
+<para>Script pour supprimer un produit de la base de données. </para>
+ 
+</para>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_login_8php_1a9f932b726f4a6523e9b11a33c9dd647c">if</link>(! $connection) <link linkend="_delete__product_8php_1a4716a4f420978a68070feea84f8fe517">deleteProductImage</link> ($product_id)</para>
+
+<para>Supprime l&apos;image associée au produit de la base de données. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_delete__product_8php_1a711797613cb863ca0756df789c396bf2">$host</link> = &apos;localhost&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_delete__product_8php_1a598ca4e71b15a1313ec95f0df1027ca5">$user</link> = &apos;Ecommerce&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_delete__product_8php_1a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</link> = &apos;Stage2023*&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_delete__product_8php_1a7691c0162d89de0b6ba47edcd8ba8878">$database</link> = &apos;E-commerce&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_delete__product_8php_1a0d9c79b9b86b3f5891c6d3892f12c6a0">$connection</link> = mysqli_connect($host, $user, $password, $database)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Script pour supprimer un produit de la base de données. </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_delete__product_8php_1a4716a4f420978a68070feea84f8fe517"/><section>
+    <title>deleteProductImage()</title>
+<indexterm><primary>deleteProductImage</primary><secondary>delete_product.php</secondary></indexterm>
+<indexterm><primary>delete_product.php</primary><secondary>deleteProductImage</secondary></indexterm>
+<para><computeroutput><link linkend="_login_8php_1a9f932b726f4a6523e9b11a33c9dd647c">if</link>(! $connection) deleteProductImage ( $product_id)</computeroutput></para><para>
+
+<para>Supprime l&apos;image associée au produit de la base de données. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>int</entry><entry>$product_id</entry><entry>
+<para>Identifiant du produit. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_delete__product_8php_1a0d9c79b9b86b3f5891c6d3892f12c6a0"/><section>
+    <title>$connection</title>
+<indexterm><primary>$connection</primary><secondary>delete_product.php</secondary></indexterm>
+<indexterm><primary>delete_product.php</primary><secondary>$connection</secondary></indexterm>
+<para><computeroutput>$connection = mysqli_connect($host, $user, $password, $database)</computeroutput></para>
+<para>Connexion à la base de données. </para>
+</section>
+<anchor xml:id="_delete__product_8php_1a7691c0162d89de0b6ba47edcd8ba8878"/><section>
+    <title>$database</title>
+<indexterm><primary>$database</primary><secondary>delete_product.php</secondary></indexterm>
+<indexterm><primary>delete_product.php</primary><secondary>$database</secondary></indexterm>
+<para><computeroutput>$database = &apos;E-commerce&apos;</computeroutput></para>
+<para>Nom de la base de données. </para>
+</section>
+<anchor xml:id="_delete__product_8php_1a711797613cb863ca0756df789c396bf2"/><section>
+    <title>$host</title>
+<indexterm><primary>$host</primary><secondary>delete_product.php</secondary></indexterm>
+<indexterm><primary>delete_product.php</primary><secondary>$host</secondary></indexterm>
+<para><computeroutput>$host = &apos;localhost&apos;</computeroutput></para>
+<para>Adresse du serveur de base de données. </para>
+</section>
+<anchor xml:id="_delete__product_8php_1a607686ef9f99ea7c42f4f3dd3dbb2b0d"/><section>
+    <title>$password</title>
+<indexterm><primary>$password</primary><secondary>delete_product.php</secondary></indexterm>
+<indexterm><primary>delete_product.php</primary><secondary>$password</secondary></indexterm>
+<para><computeroutput>$password = &apos;Stage2023*&apos;</computeroutput></para>
+<para>Mot de passe de la base de données. </para>
+</section>
+<anchor xml:id="_delete__product_8php_1a598ca4e71b15a1313ec95f0df1027ca5"/><section>
+    <title>$user</title>
+<indexterm><primary>$user</primary><secondary>delete_product.php</secondary></indexterm>
+<indexterm><primary>delete_product.php</primary><secondary>$user</secondary></indexterm>
+<para><computeroutput>$user = &apos;Ecommerce&apos;</computeroutput></para>
+<para>Nom d&apos;utilisateur de la base de données. </para>
+</section>
+</section>
+</section>

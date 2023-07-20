@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_panier_8php" xml:lang="en-US">
+<title>/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/panier.php File Reference</title>
+<indexterm><primary>/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/panier.php</primary></indexterm>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_panier_8php_1a757ee748f7d55915e45fe8802c070509">if</link> ( $_SERVER[ &apos;REQUEST_METHOD&apos;]===&apos;POST&apos;)</para>
+</listitem>
+            <listitem><para><link linkend="_login_8php_1a9f932b726f4a6523e9b11a33c9dd647c">if</link>(!empty($_SESSION[&apos;cart&apos;])) <link linkend="_panier_8php_1a4f8b81ff07793e372b80ba4857d6671f">else</link></para>
+</listitem>
+            <listitem><para><link linkend="_panier_8php_1ab4840cef90526bcc7a3d1889038def98">$total_price</link> = 0</para>
+</listitem>
+            <listitem><para><link linkend="_panier_8php_1a730ec9abdbfb8e761dd3f9d82b8d4a91">if</link> (!empty( $_SESSION[ &apos;cart&apos;]))</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_panier_8php_1ab4840cef90526bcc7a3d1889038def98"/><section>
+    <title>$total_price</title>
+<indexterm><primary>$total_price</primary><secondary>panier.php</secondary></indexterm>
+<indexterm><primary>panier.php</primary><secondary>$total_price</secondary></indexterm>
+<para><computeroutput>$total_price = 0</computeroutput></para></section>
+<anchor xml:id="_panier_8php_1a4f8b81ff07793e372b80ba4857d6671f"/><section>
+    <title>else</title>
+<indexterm><primary>else</primary><secondary>panier.php</secondary></indexterm>
+<indexterm><primary>panier.php</primary><secondary>else</secondary></indexterm>
+<para><computeroutput><link linkend="_login_8php_1a9f932b726f4a6523e9b11a33c9dd647c">if</link> (!empty( $_SESSION[ &apos;cart&apos;])) else</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">{
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;echo&#32;<emphasis role="stringliteral">&apos;&lt;p&gt;Votre&#32;panier&#32;est&#32;vide.&lt;/p&gt;&apos;</emphasis>
+</programlisting></section>
+<anchor xml:id="_panier_8php_1a757ee748f7d55915e45fe8802c070509"/><section>
+    <title>if<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>if</primary><secondary>panier.php</secondary></indexterm>
+<indexterm><primary>panier.php</primary><secondary>if</secondary></indexterm>
+<para><computeroutput>if($_SERVER[&apos;REQUEST_METHOD&apos;]===&apos;POST&apos;) ( $_SERVER[ &apos;REQUEST_METHOD&apos;] = <computeroutput>==&#160;&apos;POST&apos;</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_panier_8php_1a730ec9abdbfb8e761dd3f9d82b8d4a91"/><section>
+    <title>if<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>if</primary><secondary>panier.php</secondary></indexterm>
+<indexterm><primary>panier.php</primary><secondary>if</secondary></indexterm>
+<para><computeroutput>if(!empty($_SESSION[&apos;cart&apos;])) (! empty $_SESSION[ &apos;cart&apos;])</computeroutput></para></section>
+</section>
+</section>

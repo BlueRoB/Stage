@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_home_8php" xml:lang="en-US">
+<title>/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/home.php File Reference</title>
+<indexterm><primary>/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/home.php</primary></indexterm>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_home_8php_1a711797613cb863ca0756df789c396bf2">$host</link> = &apos;localhost&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_home_8php_1a598ca4e71b15a1313ec95f0df1027ca5">$user</link> = &apos;Ecommerce&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_home_8php_1a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</link> = &apos;Stage2023*&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_home_8php_1a7691c0162d89de0b6ba47edcd8ba8878">$database</link> = &apos;E-commerce&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_home_8php_1a0d9c79b9b86b3f5891c6d3892f12c6a0">$connection</link> = mysqli_connect($host, $user, $password, $database)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_home_8php_1a0d9c79b9b86b3f5891c6d3892f12c6a0"/><section>
+    <title>$connection</title>
+<indexterm><primary>$connection</primary><secondary>home.php</secondary></indexterm>
+<indexterm><primary>home.php</primary><secondary>$connection</secondary></indexterm>
+<para><computeroutput>$connection = mysqli_connect($host, $user, $password, $database)</computeroutput></para></section>
+<anchor xml:id="_home_8php_1a7691c0162d89de0b6ba47edcd8ba8878"/><section>
+    <title>$database</title>
+<indexterm><primary>$database</primary><secondary>home.php</secondary></indexterm>
+<indexterm><primary>home.php</primary><secondary>$database</secondary></indexterm>
+<para><computeroutput>$database = &apos;E-commerce&apos;</computeroutput></para></section>
+<anchor xml:id="_home_8php_1a711797613cb863ca0756df789c396bf2"/><section>
+    <title>$host</title>
+<indexterm><primary>$host</primary><secondary>home.php</secondary></indexterm>
+<indexterm><primary>home.php</primary><secondary>$host</secondary></indexterm>
+<para><computeroutput>$host = &apos;localhost&apos;</computeroutput></para></section>
+<anchor xml:id="_home_8php_1a607686ef9f99ea7c42f4f3dd3dbb2b0d"/><section>
+    <title>$password</title>
+<indexterm><primary>$password</primary><secondary>home.php</secondary></indexterm>
+<indexterm><primary>home.php</primary><secondary>$password</secondary></indexterm>
+<para><computeroutput>$password = &apos;Stage2023*&apos;</computeroutput></para></section>
+<anchor xml:id="_home_8php_1a598ca4e71b15a1313ec95f0df1027ca5"/><section>
+    <title>$user</title>
+<indexterm><primary>$user</primary><secondary>home.php</secondary></indexterm>
+<indexterm><primary>home.php</primary><secondary>$user</secondary></indexterm>
+<para><computeroutput>$user = &apos;Ecommerce&apos;</computeroutput></para></section>
+</section>
+</section>

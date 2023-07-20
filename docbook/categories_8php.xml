@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_categories_8php" xml:lang="en-US">
+<title>/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/categories.php File Reference</title>
+<indexterm><primary>/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/categories.php</primary></indexterm>
+<para>
+
+<para>Page affichant les catégories et sous-catégories des produits. </para>
+ 
+</para>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_login_8php_1a9f932b726f4a6523e9b11a33c9dd647c">if</link>(! $connection) <link linkend="_categories_8php_1a0b3361a4478366836702e714aed8051f">generateSubcategoryLink</link> ($categoryId, $subcategoryName)</para>
+
+<para>Fonction pour générer le lien de la sous-catégorie. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_categories_8php_1a711797613cb863ca0756df789c396bf2">$host</link> = &apos;localhost&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_categories_8php_1a598ca4e71b15a1313ec95f0df1027ca5">$user</link> = &apos;Ecommerce&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_categories_8php_1a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</link> = &apos;Stage2023*&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_categories_8php_1a7691c0162d89de0b6ba47edcd8ba8878">$database</link> = &apos;E-commerce&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_categories_8php_1a0d9c79b9b86b3f5891c6d3892f12c6a0">$connection</link> = mysqli_connect($host, $user, $password, $database)</para>
+</listitem>
+            <listitem><para><link linkend="_categories_8php_1a18b2a8d133fa7733bf34abcc6ca2ef5b">$category</link> = isset($_GET[&apos;category&apos;]) ? $_GET[&apos;category&apos;] : &apos;&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_categories_8php_1a115efabd9b3bdf2ed8515c5fafcdc941">$subcategory</link> = isset($_GET[&apos;subcategory&apos;]) ? $_GET[&apos;subcategory&apos;] : &apos;&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_login_8php_1a9f932b726f4a6523e9b11a33c9dd647c">if</link>(!empty($category)) <link linkend="_categories_8php_1a87708d91b62d663ebe591430f9d9efc8">else</link></para>
+</listitem>
+            <listitem><para><link linkend="_categories_8php_1ad2ab738480b369caf6795531da2fa121">$categoryResult</link> = mysqli_query($connection, $categoryQuery)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Page affichant les catégories et sous-catégories des produits. </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_categories_8php_1a0b3361a4478366836702e714aed8051f"/><section>
+    <title>generateSubcategoryLink()</title>
+<indexterm><primary>generateSubcategoryLink</primary><secondary>categories.php</secondary></indexterm>
+<indexterm><primary>categories.php</primary><secondary>generateSubcategoryLink</secondary></indexterm>
+<para><computeroutput><link linkend="_login_8php_1a9f932b726f4a6523e9b11a33c9dd647c">if</link>(! $connection) generateSubcategoryLink ( $categoryId,  $subcategoryName)</computeroutput></para><para>
+
+<para>Fonction pour générer le lien de la sous-catégorie. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>int</entry><entry>$categoryId</entry><entry>
+<para>Identifiant de la catégorie. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>string</entry><entry>$subcategoryName</entry><entry>
+<para>Nom de la sous-catégorie. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>string Lien de la sous-catégorie. </para>
+</formalpara>
+</para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_categories_8php_1a18b2a8d133fa7733bf34abcc6ca2ef5b"/><section>
+    <title>$category</title>
+<indexterm><primary>$category</primary><secondary>categories.php</secondary></indexterm>
+<indexterm><primary>categories.php</primary><secondary>$category</secondary></indexterm>
+<para><computeroutput>$category = isset($_GET[&apos;category&apos;]) ? $_GET[&apos;category&apos;] : &apos;&apos;</computeroutput></para></section>
+<anchor xml:id="_categories_8php_1ad2ab738480b369caf6795531da2fa121"/><section>
+    <title>$categoryResult</title>
+<indexterm><primary>$categoryResult</primary><secondary>categories.php</secondary></indexterm>
+<indexterm><primary>categories.php</primary><secondary>$categoryResult</secondary></indexterm>
+<para><computeroutput>$categoryResult = mysqli_query($connection, $categoryQuery)</computeroutput></para></section>
+<anchor xml:id="_categories_8php_1a0d9c79b9b86b3f5891c6d3892f12c6a0"/><section>
+    <title>$connection</title>
+<indexterm><primary>$connection</primary><secondary>categories.php</secondary></indexterm>
+<indexterm><primary>categories.php</primary><secondary>$connection</secondary></indexterm>
+<para><computeroutput>$connection = mysqli_connect($host, $user, $password, $database)</computeroutput></para>
+<para>Connexion à la base de données. </para>
+</section>
+<anchor xml:id="_categories_8php_1a7691c0162d89de0b6ba47edcd8ba8878"/><section>
+    <title>$database</title>
+<indexterm><primary>$database</primary><secondary>categories.php</secondary></indexterm>
+<indexterm><primary>categories.php</primary><secondary>$database</secondary></indexterm>
+<para><computeroutput>$database = &apos;E-commerce&apos;</computeroutput></para>
+<para>Nom de la base de données. </para>
+</section>
+<anchor xml:id="_categories_8php_1a711797613cb863ca0756df789c396bf2"/><section>
+    <title>$host</title>
+<indexterm><primary>$host</primary><secondary>categories.php</secondary></indexterm>
+<indexterm><primary>categories.php</primary><secondary>$host</secondary></indexterm>
+<para><computeroutput>$host = &apos;localhost&apos;</computeroutput></para>
+<para>Adresse du serveur de base de données. </para>
+</section>
+<anchor xml:id="_categories_8php_1a607686ef9f99ea7c42f4f3dd3dbb2b0d"/><section>
+    <title>$password</title>
+<indexterm><primary>$password</primary><secondary>categories.php</secondary></indexterm>
+<indexterm><primary>categories.php</primary><secondary>$password</secondary></indexterm>
+<para><computeroutput>$password = &apos;Stage2023*&apos;</computeroutput></para>
+<para>Mot de passe de la base de données. </para>
+</section>
+<anchor xml:id="_categories_8php_1a115efabd9b3bdf2ed8515c5fafcdc941"/><section>
+    <title>$subcategory</title>
+<indexterm><primary>$subcategory</primary><secondary>categories.php</secondary></indexterm>
+<indexterm><primary>categories.php</primary><secondary>$subcategory</secondary></indexterm>
+<para><computeroutput>$subcategory = isset($_GET[&apos;subcategory&apos;]) ? $_GET[&apos;subcategory&apos;] : &apos;&apos;</computeroutput></para></section>
+<anchor xml:id="_categories_8php_1a598ca4e71b15a1313ec95f0df1027ca5"/><section>
+    <title>$user</title>
+<indexterm><primary>$user</primary><secondary>categories.php</secondary></indexterm>
+<indexterm><primary>categories.php</primary><secondary>$user</secondary></indexterm>
+<para><computeroutput>$user = &apos;Ecommerce&apos;</computeroutput></para>
+<para>Nom d&apos;utilisateur de la base de données. </para>
+</section>
+<anchor xml:id="_categories_8php_1a87708d91b62d663ebe591430f9d9efc8"/><section>
+    <title>else</title>
+<indexterm><primary>else</primary><secondary>categories.php</secondary></indexterm>
+<indexterm><primary>categories.php</primary><secondary>else</secondary></indexterm>
+<para><computeroutput><link linkend="_login_8php_1a9f932b726f4a6523e9b11a33c9dd647c">if</link> (!empty( $category)) else</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">{
+&#32;&#32;&#32;&#32;
+&#32;&#32;&#32;&#32;$categoryQuery&#32;=&#32;<emphasis role="stringliteral">&quot;SELECT&#32;*&#32;FROM&#32;categories&quot;</emphasis>
+</programlisting></section>
+</section>
+</section>

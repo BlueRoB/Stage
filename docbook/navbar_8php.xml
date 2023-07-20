@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_navbar_8php" xml:lang="en-US">
+<title>/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/navbar.php File Reference</title>
+<indexterm><primary>/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/navbar.php</primary></indexterm>
+<para>
+
+<para>Barre de navigation du site. </para>
+ 
+</para>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_login_8php_1a9f932b726f4a6523e9b11a33c9dd647c">if</link>(session_status()==PHP_SESSION_NONE) <link linkend="_login_8php_1a9f932b726f4a6523e9b11a33c9dd647c">if</link>(!isset($_SESSION[&apos;user_id&apos;])) <link linkend="_navbar_8php_1ab7260bb0d70c00d02a2f7d128fa4e846">else</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Barre de navigation du site. </para>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_navbar_8php_1ab7260bb0d70c00d02a2f7d128fa4e846"/><section>
+    <title>else</title>
+<indexterm><primary>else</primary><secondary>navbar.php</secondary></indexterm>
+<indexterm><primary>navbar.php</primary><secondary>else</secondary></indexterm>
+<para><computeroutput><link linkend="_login_8php_1a9f932b726f4a6523e9b11a33c9dd647c">if</link>(session_status()==PHP_SESSION_NONE) <link linkend="_login_8php_1a9f932b726f4a6523e9b11a33c9dd647c">if</link> (!isset( $_SESSION[ &apos;user_id&apos;])) else</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">{
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;$user_name&#32;=&#32;<link linkend="_logout_8php_1a5f545b9684799a00f7a14442205b98e3">$_SESSION</link>[<emphasis role="stringliteral">&apos;user_name&apos;</emphasis>]
+</programlisting></section>
+</section>
+</section>

@@ -1,0 +1,148 @@
+\doxysection{/\+Applications/\+XAMPP/xamppfiles/htdocs/\+WEB/\+Stage/view/admin.php File Reference}
+\hypertarget{admin_8php}{}\label{admin_8php}\index{/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/admin.php@{/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/admin.php}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}}(! \$connection) \mbox{\hyperlink{admin_8php_a3207d7c2fd65eff61d908b8b84c85a26}{get\+Products}} ()
+\begin{DoxyCompactList}\small\item\em Fonction pour récupérer tous les produits de la base de données. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{admin_8php_a0fc10b64683021b70c7eb95fb514c119}{get\+Users}} ()
+\begin{DoxyCompactList}\small\item\em Fonction pour récupérer tous les utilisateurs de la base de données. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{admin_8php_aced2d658f22ac16b96b41dbf988bae06}{delete\+Product}} (\$product\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Fonction pour supprimer un produit de la base de données. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{admin_8php_a8c2802bb635b36ce3d7fb929d5539332}{display\+Add\+Product\+Form}} ()
+\item 
+\mbox{\hyperlink{admin_8php_acee216fcaefcc15a1d97a159b0a7cd54}{display\+View\+Products\+Table}} ()
+\item 
+\mbox{\hyperlink{admin_8php_aef35d969001fa73cd0a2f8c408b32b0c}{display\+User\+Management\+Table}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{admin_8php_a711797613cb863ca0756df789c396bf2}{\$host}} = \textquotesingle{}localhost\textquotesingle{}
+\item 
+\mbox{\hyperlink{admin_8php_a598ca4e71b15a1313ec95f0df1027ca5}{\$user}} = \textquotesingle{}Ecommerce\textquotesingle{}
+\item 
+\mbox{\hyperlink{admin_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{\$password}} = \textquotesingle{}Stage2023\texorpdfstring{$\ast$}{*}\textquotesingle{}
+\item 
+\mbox{\hyperlink{admin_8php_a7691c0162d89de0b6ba47edcd8ba8878}{\$database}} = \textquotesingle{}E-\/commerce\textquotesingle{}
+\item 
+\mbox{\hyperlink{admin_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}} = mysqli\+\_\+connect(\$host, \$user, \$password, \$database)
+\item 
+\mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}}(\$\+\_\+\+SERVER\mbox{[}\textquotesingle{}REQUEST\+\_\+\+METHOD\textquotesingle{}\mbox{]}===\textquotesingle{}POST\textquotesingle{}) \mbox{\hyperlink{admin_8php_a2510eb6d1c69e6d1ef998b3f871ae327}{\$active\+Tab}} = isset(\$\+\_\+\+GET\mbox{[}\textquotesingle{}tab\textquotesingle{}\mbox{]}) ? \$\+\_\+\+GET\mbox{[}\textquotesingle{}tab\textquotesingle{}\mbox{]} \+: \textquotesingle{}\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Sélectionne l\textquotesingle{}onglet actif (tab) à afficher dans l\textquotesingle{}interface d\textquotesingle{}administration. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}}(\$active\+Tab===\textquotesingle{}add\+\_\+product\textquotesingle{}) elseif( \$active\+Tab===\textquotesingle{}view\+\_\+products\textquotesingle{}) \mbox{\hyperlink{admin_8php_a2b013dddda13238596beb22b101b52e6}{elseif}} ( \$active\+Tab===\textquotesingle{}user\+\_\+management\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{admin_8php_aced2d658f22ac16b96b41dbf988bae06}\label{admin_8php_aced2d658f22ac16b96b41dbf988bae06} 
+\index{admin.php@{admin.php}!deleteProduct@{deleteProduct}}
+\index{deleteProduct@{deleteProduct}!admin.php@{admin.php}}
+\doxysubsubsection{\texorpdfstring{deleteProduct()}{deleteProduct()}}
+{\footnotesize\ttfamily delete\+Product (\begin{DoxyParamCaption}\item[{}]{\$product\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Fonction pour supprimer un produit de la base de données. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$product\+\_\+id} & L\textquotesingle{}identifiant du produit à supprimer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Renvoie true si la suppression réussit, sinon false. 
+\end{DoxyReturn}
+\Hypertarget{admin_8php_a8c2802bb635b36ce3d7fb929d5539332}\label{admin_8php_a8c2802bb635b36ce3d7fb929d5539332} 
+\index{admin.php@{admin.php}!displayAddProductForm@{displayAddProductForm}}
+\index{displayAddProductForm@{displayAddProductForm}!admin.php@{admin.php}}
+\doxysubsubsection{\texorpdfstring{displayAddProductForm()}{displayAddProductForm()}}
+{\footnotesize\ttfamily display\+Add\+Product\+Form (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{admin_8php_aef35d969001fa73cd0a2f8c408b32b0c}\label{admin_8php_aef35d969001fa73cd0a2f8c408b32b0c} 
+\index{admin.php@{admin.php}!displayUserManagementTable@{displayUserManagementTable}}
+\index{displayUserManagementTable@{displayUserManagementTable}!admin.php@{admin.php}}
+\doxysubsubsection{\texorpdfstring{displayUserManagementTable()}{displayUserManagementTable()}}
+{\footnotesize\ttfamily display\+User\+Management\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{admin_8php_acee216fcaefcc15a1d97a159b0a7cd54}\label{admin_8php_acee216fcaefcc15a1d97a159b0a7cd54} 
+\index{admin.php@{admin.php}!displayViewProductsTable@{displayViewProductsTable}}
+\index{displayViewProductsTable@{displayViewProductsTable}!admin.php@{admin.php}}
+\doxysubsubsection{\texorpdfstring{displayViewProductsTable()}{displayViewProductsTable()}}
+{\footnotesize\ttfamily display\+View\+Products\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{admin_8php_a3207d7c2fd65eff61d908b8b84c85a26}\label{admin_8php_a3207d7c2fd65eff61d908b8b84c85a26} 
+\index{admin.php@{admin.php}!getProducts@{getProducts}}
+\index{getProducts@{getProducts}!admin.php@{admin.php}}
+\doxysubsubsection{\texorpdfstring{getProducts()}{getProducts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}}(! \$connection) get\+Products (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction pour récupérer tous les produits de la base de données. 
+
+\begin{DoxyReturn}{Returns}
+array Tableau contenant tous les produits. 
+\end{DoxyReturn}
+\Hypertarget{admin_8php_a0fc10b64683021b70c7eb95fb514c119}\label{admin_8php_a0fc10b64683021b70c7eb95fb514c119} 
+\index{admin.php@{admin.php}!getUsers@{getUsers}}
+\index{getUsers@{getUsers}!admin.php@{admin.php}}
+\doxysubsubsection{\texorpdfstring{getUsers()}{getUsers()}}
+{\footnotesize\ttfamily get\+Users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction pour récupérer tous les utilisateurs de la base de données. 
+
+\begin{DoxyReturn}{Returns}
+array Tableau contenant tous les utilisateurs. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{admin_8php_a2510eb6d1c69e6d1ef998b3f871ae327}\label{admin_8php_a2510eb6d1c69e6d1ef998b3f871ae327} 
+\index{admin.php@{admin.php}!\$activeTab@{\$activeTab}}
+\index{\$activeTab@{\$activeTab}!admin.php@{admin.php}}
+\doxysubsubsection{\texorpdfstring{\$activeTab}{\$activeTab}}
+{\footnotesize\ttfamily \$active\+Tab = isset(\$\+\_\+\+GET\mbox{[}\textquotesingle{}tab\textquotesingle{}\mbox{]}) ? \$\+\_\+\+GET\mbox{[}\textquotesingle{}tab\textquotesingle{}\mbox{]} \+: \textquotesingle{}\textquotesingle{}}
+
+
+
+Sélectionne l\textquotesingle{}onglet actif (tab) à afficher dans l\textquotesingle{}interface d\textquotesingle{}administration. 
+
+\Hypertarget{admin_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}\label{admin_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0} 
+\index{admin.php@{admin.php}!\$connection@{\$connection}}
+\index{\$connection@{\$connection}!admin.php@{admin.php}}
+\doxysubsubsection{\texorpdfstring{\$connection}{\$connection}}
+{\footnotesize\ttfamily \$connection = mysqli\+\_\+connect(\$host, \$user, \$password, \$database)}
+
+\Hypertarget{admin_8php_a7691c0162d89de0b6ba47edcd8ba8878}\label{admin_8php_a7691c0162d89de0b6ba47edcd8ba8878} 
+\index{admin.php@{admin.php}!\$database@{\$database}}
+\index{\$database@{\$database}!admin.php@{admin.php}}
+\doxysubsubsection{\texorpdfstring{\$database}{\$database}}
+{\footnotesize\ttfamily \$database = \textquotesingle{}E-\/commerce\textquotesingle{}}
+
+\Hypertarget{admin_8php_a711797613cb863ca0756df789c396bf2}\label{admin_8php_a711797613cb863ca0756df789c396bf2} 
+\index{admin.php@{admin.php}!\$host@{\$host}}
+\index{\$host@{\$host}!admin.php@{admin.php}}
+\doxysubsubsection{\texorpdfstring{\$host}{\$host}}
+{\footnotesize\ttfamily \$host = \textquotesingle{}localhost\textquotesingle{}}
+
+\Hypertarget{admin_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}\label{admin_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d} 
+\index{admin.php@{admin.php}!\$password@{\$password}}
+\index{\$password@{\$password}!admin.php@{admin.php}}
+\doxysubsubsection{\texorpdfstring{\$password}{\$password}}
+{\footnotesize\ttfamily \$password = \textquotesingle{}Stage2023\texorpdfstring{$\ast$}{*}\textquotesingle{}}
+
+\Hypertarget{admin_8php_a598ca4e71b15a1313ec95f0df1027ca5}\label{admin_8php_a598ca4e71b15a1313ec95f0df1027ca5} 
+\index{admin.php@{admin.php}!\$user@{\$user}}
+\index{\$user@{\$user}!admin.php@{admin.php}}
+\doxysubsubsection{\texorpdfstring{\$user}{\$user}}
+{\footnotesize\ttfamily \$user = \textquotesingle{}Ecommerce\textquotesingle{}}
+
+\Hypertarget{admin_8php_a2b013dddda13238596beb22b101b52e6}\label{admin_8php_a2b013dddda13238596beb22b101b52e6} 
+\index{admin.php@{admin.php}!elseif@{elseif}}
+\index{elseif@{elseif}!admin.php@{admin.php}}
+\doxysubsubsection{\texorpdfstring{elseif}{elseif}}
+{\footnotesize\ttfamily \mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}}( \$active\+Tab===\textquotesingle{}add\+\_\+product\textquotesingle{}) elseif(\$active\+Tab===\textquotesingle{}view\+\_\+products\textquotesingle{}) elseif(\$active\+Tab===\textquotesingle{}user\+\_\+management\textquotesingle{}) (\begin{DoxyParamCaption}\item[{}]{\$active\+Tab = {\ttfamily ==~\textquotesingle{}user\+\_\+management\textquotesingle{}} }\end{DoxyParamCaption})}
+

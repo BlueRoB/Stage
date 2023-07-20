@@ -1,0 +1,125 @@
+\doxysection{/\+Applications/\+XAMPP/xamppfiles/htdocs/\+WEB/\+Stage/view/categories.php File Reference}
+\hypertarget{categories_8php}{}\label{categories_8php}\index{/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/categories.php@{/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/categories.php}}
+
+
+Page affichant les catégories et sous-\/catégories des produits.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}}(! \$connection) \mbox{\hyperlink{categories_8php_a0b3361a4478366836702e714aed8051f}{generate\+Subcategory\+Link}} (\$category\+Id, \$subcategory\+Name)
+\begin{DoxyCompactList}\small\item\em Fonction pour générer le lien de la sous-\/catégorie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{categories_8php_a711797613cb863ca0756df789c396bf2}{\$host}} = \textquotesingle{}localhost\textquotesingle{}
+\item 
+\mbox{\hyperlink{categories_8php_a598ca4e71b15a1313ec95f0df1027ca5}{\$user}} = \textquotesingle{}Ecommerce\textquotesingle{}
+\item 
+\mbox{\hyperlink{categories_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{\$password}} = \textquotesingle{}Stage2023\texorpdfstring{$\ast$}{*}\textquotesingle{}
+\item 
+\mbox{\hyperlink{categories_8php_a7691c0162d89de0b6ba47edcd8ba8878}{\$database}} = \textquotesingle{}E-\/commerce\textquotesingle{}
+\item 
+\mbox{\hyperlink{categories_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}} = mysqli\+\_\+connect(\$host, \$user, \$password, \$database)
+\item 
+\mbox{\hyperlink{categories_8php_a18b2a8d133fa7733bf34abcc6ca2ef5b}{\$category}} = isset(\$\+\_\+\+GET\mbox{[}\textquotesingle{}category\textquotesingle{}\mbox{]}) ? \$\+\_\+\+GET\mbox{[}\textquotesingle{}category\textquotesingle{}\mbox{]} \+: \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{categories_8php_a115efabd9b3bdf2ed8515c5fafcdc941}{\$subcategory}} = isset(\$\+\_\+\+GET\mbox{[}\textquotesingle{}subcategory\textquotesingle{}\mbox{]}) ? \$\+\_\+\+GET\mbox{[}\textquotesingle{}subcategory\textquotesingle{}\mbox{]} \+: \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}}(!empty(\$category)) \mbox{\hyperlink{categories_8php_a87708d91b62d663ebe591430f9d9efc8}{else}}
+\item 
+\mbox{\hyperlink{categories_8php_ad2ab738480b369caf6795531da2fa121}{\$category\+Result}} = mysqli\+\_\+query(\$connection, \$category\+Query)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Page affichant les catégories et sous-\/catégories des produits. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{categories_8php_a0b3361a4478366836702e714aed8051f}\label{categories_8php_a0b3361a4478366836702e714aed8051f} 
+\index{categories.php@{categories.php}!generateSubcategoryLink@{generateSubcategoryLink}}
+\index{generateSubcategoryLink@{generateSubcategoryLink}!categories.php@{categories.php}}
+\doxysubsubsection{\texorpdfstring{generateSubcategoryLink()}{generateSubcategoryLink()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}}(! \$connection) generate\+Subcategory\+Link (\begin{DoxyParamCaption}\item[{}]{\$category\+Id,  }\item[{}]{\$subcategory\+Name }\end{DoxyParamCaption})}
+
+
+
+Fonction pour générer le lien de la sous-\/catégorie. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$category\+Id} & Identifiant de la catégorie. \\
+\hline
+string & {\em \$subcategory\+Name} & Nom de la sous-\/catégorie. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Lien de la sous-\/catégorie. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{categories_8php_a18b2a8d133fa7733bf34abcc6ca2ef5b}\label{categories_8php_a18b2a8d133fa7733bf34abcc6ca2ef5b} 
+\index{categories.php@{categories.php}!\$category@{\$category}}
+\index{\$category@{\$category}!categories.php@{categories.php}}
+\doxysubsubsection{\texorpdfstring{\$category}{\$category}}
+{\footnotesize\ttfamily \$category = isset(\$\+\_\+\+GET\mbox{[}\textquotesingle{}category\textquotesingle{}\mbox{]}) ? \$\+\_\+\+GET\mbox{[}\textquotesingle{}category\textquotesingle{}\mbox{]} \+: \textquotesingle{}\textquotesingle{}}
+
+\Hypertarget{categories_8php_ad2ab738480b369caf6795531da2fa121}\label{categories_8php_ad2ab738480b369caf6795531da2fa121} 
+\index{categories.php@{categories.php}!\$categoryResult@{\$categoryResult}}
+\index{\$categoryResult@{\$categoryResult}!categories.php@{categories.php}}
+\doxysubsubsection{\texorpdfstring{\$categoryResult}{\$categoryResult}}
+{\footnotesize\ttfamily \$category\+Result = mysqli\+\_\+query(\$connection, \$category\+Query)}
+
+\Hypertarget{categories_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}\label{categories_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0} 
+\index{categories.php@{categories.php}!\$connection@{\$connection}}
+\index{\$connection@{\$connection}!categories.php@{categories.php}}
+\doxysubsubsection{\texorpdfstring{\$connection}{\$connection}}
+{\footnotesize\ttfamily \$connection = mysqli\+\_\+connect(\$host, \$user, \$password, \$database)}
+
+Connexion à la base de données. \Hypertarget{categories_8php_a7691c0162d89de0b6ba47edcd8ba8878}\label{categories_8php_a7691c0162d89de0b6ba47edcd8ba8878} 
+\index{categories.php@{categories.php}!\$database@{\$database}}
+\index{\$database@{\$database}!categories.php@{categories.php}}
+\doxysubsubsection{\texorpdfstring{\$database}{\$database}}
+{\footnotesize\ttfamily \$database = \textquotesingle{}E-\/commerce\textquotesingle{}}
+
+Nom de la base de données. \Hypertarget{categories_8php_a711797613cb863ca0756df789c396bf2}\label{categories_8php_a711797613cb863ca0756df789c396bf2} 
+\index{categories.php@{categories.php}!\$host@{\$host}}
+\index{\$host@{\$host}!categories.php@{categories.php}}
+\doxysubsubsection{\texorpdfstring{\$host}{\$host}}
+{\footnotesize\ttfamily \$host = \textquotesingle{}localhost\textquotesingle{}}
+
+Adresse du serveur de base de données. \Hypertarget{categories_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}\label{categories_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d} 
+\index{categories.php@{categories.php}!\$password@{\$password}}
+\index{\$password@{\$password}!categories.php@{categories.php}}
+\doxysubsubsection{\texorpdfstring{\$password}{\$password}}
+{\footnotesize\ttfamily \$password = \textquotesingle{}Stage2023\texorpdfstring{$\ast$}{*}\textquotesingle{}}
+
+Mot de passe de la base de données. \Hypertarget{categories_8php_a115efabd9b3bdf2ed8515c5fafcdc941}\label{categories_8php_a115efabd9b3bdf2ed8515c5fafcdc941} 
+\index{categories.php@{categories.php}!\$subcategory@{\$subcategory}}
+\index{\$subcategory@{\$subcategory}!categories.php@{categories.php}}
+\doxysubsubsection{\texorpdfstring{\$subcategory}{\$subcategory}}
+{\footnotesize\ttfamily \$subcategory = isset(\$\+\_\+\+GET\mbox{[}\textquotesingle{}subcategory\textquotesingle{}\mbox{]}) ? \$\+\_\+\+GET\mbox{[}\textquotesingle{}subcategory\textquotesingle{}\mbox{]} \+: \textquotesingle{}\textquotesingle{}}
+
+\Hypertarget{categories_8php_a598ca4e71b15a1313ec95f0df1027ca5}\label{categories_8php_a598ca4e71b15a1313ec95f0df1027ca5} 
+\index{categories.php@{categories.php}!\$user@{\$user}}
+\index{\$user@{\$user}!categories.php@{categories.php}}
+\doxysubsubsection{\texorpdfstring{\$user}{\$user}}
+{\footnotesize\ttfamily \$user = \textquotesingle{}Ecommerce\textquotesingle{}}
+
+Nom d\textquotesingle{}utilisateur de la base de données. \Hypertarget{categories_8php_a87708d91b62d663ebe591430f9d9efc8}\label{categories_8php_a87708d91b62d663ebe591430f9d9efc8} 
+\index{categories.php@{categories.php}!else@{else}}
+\index{else@{else}!categories.php@{categories.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}} (!empty( \$category)) else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \$categoryQuery\ =\ \textcolor{stringliteral}{"{}SELECT\ *\ FROM\ categories"{}}}
+
+\end{DoxyCode}

@@ -1,0 +1,76 @@
+\doxysection{/\+Applications/\+XAMPP/xamppfiles/htdocs/\+WEB/\+Stage/view/update\+\_\+product.php File Reference}
+\hypertarget{update__product_8php}{}\label{update__product_8php}\index{/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/update\_product.php@{/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/update\_product.php}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{update__product_8php_a711797613cb863ca0756df789c396bf2}{\$host}} = \textquotesingle{}localhost\textquotesingle{}
+\item 
+\mbox{\hyperlink{update__product_8php_a598ca4e71b15a1313ec95f0df1027ca5}{\$user}} = \textquotesingle{}Ecommerce\textquotesingle{}
+\item 
+\mbox{\hyperlink{update__product_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{\$password}} = \textquotesingle{}Stage2023\texorpdfstring{$\ast$}{*}\textquotesingle{}
+\item 
+\mbox{\hyperlink{update__product_8php_a7691c0162d89de0b6ba47edcd8ba8878}{\$database}} = \textquotesingle{}E-\/commerce\textquotesingle{}
+\item 
+\mbox{\hyperlink{update__product_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}} = mysqli\+\_\+connect(\$host, \$user, \$password, \$database)
+\item 
+\mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}}(! \$connection) \mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}}(\$\+\_\+\+SERVER\mbox{[}\textquotesingle{}REQUEST\+\_\+\+METHOD\textquotesingle{}\mbox{]}===\textquotesingle{}POST\textquotesingle{}) \mbox{\hyperlink{update__product_8php_aab6dda9c6eb240ef0fc575c5d8c0265e}{else}}
+\item 
+\mbox{\hyperlink{update__product_8php_a6733eb5f605d09eaede9845835d71c4e}{exit}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Page de mise à jour d\textquotesingle{}un produit.
+
+Cette page permet de mettre à jour les informations d\textquotesingle{}un produit dans la base de données. Les informations sont récupérées via une requête POST et validées. Si les informations sont valides, le produit est mis à jour dans la base de données. 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{update__product_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}\label{update__product_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0} 
+\index{update\_product.php@{update\_product.php}!\$connection@{\$connection}}
+\index{\$connection@{\$connection}!update\_product.php@{update\_product.php}}
+\doxysubsubsection{\texorpdfstring{\$connection}{\$connection}}
+{\footnotesize\ttfamily \$connection = mysqli\+\_\+connect(\$host, \$user, \$password, \$database)}
+
+\Hypertarget{update__product_8php_a7691c0162d89de0b6ba47edcd8ba8878}\label{update__product_8php_a7691c0162d89de0b6ba47edcd8ba8878} 
+\index{update\_product.php@{update\_product.php}!\$database@{\$database}}
+\index{\$database@{\$database}!update\_product.php@{update\_product.php}}
+\doxysubsubsection{\texorpdfstring{\$database}{\$database}}
+{\footnotesize\ttfamily \$database = \textquotesingle{}E-\/commerce\textquotesingle{}}
+
+\Hypertarget{update__product_8php_a711797613cb863ca0756df789c396bf2}\label{update__product_8php_a711797613cb863ca0756df789c396bf2} 
+\index{update\_product.php@{update\_product.php}!\$host@{\$host}}
+\index{\$host@{\$host}!update\_product.php@{update\_product.php}}
+\doxysubsubsection{\texorpdfstring{\$host}{\$host}}
+{\footnotesize\ttfamily \$host = \textquotesingle{}localhost\textquotesingle{}}
+
+\Hypertarget{update__product_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}\label{update__product_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d} 
+\index{update\_product.php@{update\_product.php}!\$password@{\$password}}
+\index{\$password@{\$password}!update\_product.php@{update\_product.php}}
+\doxysubsubsection{\texorpdfstring{\$password}{\$password}}
+{\footnotesize\ttfamily \$password = \textquotesingle{}Stage2023\texorpdfstring{$\ast$}{*}\textquotesingle{}}
+
+\Hypertarget{update__product_8php_a598ca4e71b15a1313ec95f0df1027ca5}\label{update__product_8php_a598ca4e71b15a1313ec95f0df1027ca5} 
+\index{update\_product.php@{update\_product.php}!\$user@{\$user}}
+\index{\$user@{\$user}!update\_product.php@{update\_product.php}}
+\doxysubsubsection{\texorpdfstring{\$user}{\$user}}
+{\footnotesize\ttfamily \$user = \textquotesingle{}Ecommerce\textquotesingle{}}
+
+\Hypertarget{update__product_8php_aab6dda9c6eb240ef0fc575c5d8c0265e}\label{update__product_8php_aab6dda9c6eb240ef0fc575c5d8c0265e} 
+\index{update\_product.php@{update\_product.php}!else@{else}}
+\index{else@{else}!update\_product.php@{update\_product.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}}(! \$connection) \mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}} ( \$\+\_\+\+SERVER\mbox{[} \textquotesingle{}REQUEST\+\_\+\+METHOD\textquotesingle{}\mbox{]}===\textquotesingle{}POST\textquotesingle{}) else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ header(\textcolor{stringliteral}{"{}Location:\ admin.php?tab=view\_products"{}})}
+
+\end{DoxyCode}
+\Hypertarget{update__product_8php_a6733eb5f605d09eaede9845835d71c4e}\label{update__product_8php_a6733eb5f605d09eaede9845835d71c4e} 
+\index{update\_product.php@{update\_product.php}!exit@{exit}}
+\index{exit@{exit}!update\_product.php@{update\_product.php}}
+\doxysubsubsection{\texorpdfstring{exit}{exit}}
+{\footnotesize\ttfamily exit}
+

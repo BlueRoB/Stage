@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_admin_8php" xml:lang="en-US">
+<title>/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/admin.php File Reference</title>
+<indexterm><primary>/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/admin.php</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_login_8php_1a9f932b726f4a6523e9b11a33c9dd647c">if</link>(! $connection) <link linkend="_admin_8php_1a3207d7c2fd65eff61d908b8b84c85a26">getProducts</link> ()</para>
+
+<para>Fonction pour récupérer tous les produits de la base de données. </para>
+</listitem>
+            <listitem><para><link linkend="_admin_8php_1a0fc10b64683021b70c7eb95fb514c119">getUsers</link> ()</para>
+
+<para>Fonction pour récupérer tous les utilisateurs de la base de données. </para>
+</listitem>
+            <listitem><para><link linkend="_admin_8php_1aced2d658f22ac16b96b41dbf988bae06">deleteProduct</link> ($product_id)</para>
+
+<para>Fonction pour supprimer un produit de la base de données. </para>
+</listitem>
+            <listitem><para><link linkend="_admin_8php_1a8c2802bb635b36ce3d7fb929d5539332">displayAddProductForm</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_admin_8php_1acee216fcaefcc15a1d97a159b0a7cd54">displayViewProductsTable</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_admin_8php_1aef35d969001fa73cd0a2f8c408b32b0c">displayUserManagementTable</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_admin_8php_1a711797613cb863ca0756df789c396bf2">$host</link> = &apos;localhost&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_admin_8php_1a598ca4e71b15a1313ec95f0df1027ca5">$user</link> = &apos;Ecommerce&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_admin_8php_1a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</link> = &apos;Stage2023*&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_admin_8php_1a7691c0162d89de0b6ba47edcd8ba8878">$database</link> = &apos;E-commerce&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_admin_8php_1a0d9c79b9b86b3f5891c6d3892f12c6a0">$connection</link> = mysqli_connect($host, $user, $password, $database)</para>
+</listitem>
+            <listitem><para><link linkend="_login_8php_1a9f932b726f4a6523e9b11a33c9dd647c">if</link>($_SERVER[&apos;REQUEST_METHOD&apos;]===&apos;POST&apos;) <link linkend="_admin_8php_1a2510eb6d1c69e6d1ef998b3f871ae327">$activeTab</link> = isset($_GET[&apos;tab&apos;]) ? $_GET[&apos;tab&apos;] : &apos;&apos;</para>
+
+<para>Sélectionne l&apos;onglet actif (tab) à afficher dans l&apos;interface d&apos;administration. </para>
+</listitem>
+            <listitem><para><link linkend="_login_8php_1a9f932b726f4a6523e9b11a33c9dd647c">if</link>($activeTab===&apos;add_product&apos;) elseif( $activeTab===&apos;view_products&apos;) <link linkend="_admin_8php_1a2b013dddda13238596beb22b101b52e6">elseif</link> ( $activeTab===&apos;user_management&apos;)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_admin_8php_1aced2d658f22ac16b96b41dbf988bae06"/><section>
+    <title>deleteProduct()</title>
+<indexterm><primary>deleteProduct</primary><secondary>admin.php</secondary></indexterm>
+<indexterm><primary>admin.php</primary><secondary>deleteProduct</secondary></indexterm>
+<para><computeroutput>deleteProduct ( $product_id)</computeroutput></para><para>
+
+<para>Fonction pour supprimer un produit de la base de données. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>int</entry><entry>$product_id</entry><entry>
+<para>L&apos;identifiant du produit à supprimer. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>bool Renvoie true si la suppression réussit, sinon false. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_admin_8php_1a8c2802bb635b36ce3d7fb929d5539332"/><section>
+    <title>displayAddProductForm()</title>
+<indexterm><primary>displayAddProductForm</primary><secondary>admin.php</secondary></indexterm>
+<indexterm><primary>admin.php</primary><secondary>displayAddProductForm</secondary></indexterm>
+<para><computeroutput>displayAddProductForm ( )</computeroutput></para></section>
+<anchor xml:id="_admin_8php_1aef35d969001fa73cd0a2f8c408b32b0c"/><section>
+    <title>displayUserManagementTable()</title>
+<indexterm><primary>displayUserManagementTable</primary><secondary>admin.php</secondary></indexterm>
+<indexterm><primary>admin.php</primary><secondary>displayUserManagementTable</secondary></indexterm>
+<para><computeroutput>displayUserManagementTable ( )</computeroutput></para></section>
+<anchor xml:id="_admin_8php_1acee216fcaefcc15a1d97a159b0a7cd54"/><section>
+    <title>displayViewProductsTable()</title>
+<indexterm><primary>displayViewProductsTable</primary><secondary>admin.php</secondary></indexterm>
+<indexterm><primary>admin.php</primary><secondary>displayViewProductsTable</secondary></indexterm>
+<para><computeroutput>displayViewProductsTable ( )</computeroutput></para></section>
+<anchor xml:id="_admin_8php_1a3207d7c2fd65eff61d908b8b84c85a26"/><section>
+    <title>getProducts()</title>
+<indexterm><primary>getProducts</primary><secondary>admin.php</secondary></indexterm>
+<indexterm><primary>admin.php</primary><secondary>getProducts</secondary></indexterm>
+<para><computeroutput><link linkend="_login_8php_1a9f932b726f4a6523e9b11a33c9dd647c">if</link>(! $connection) getProducts ( )</computeroutput></para><para>
+
+<para>Fonction pour récupérer tous les produits de la base de données. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>array Tableau contenant tous les produits. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_admin_8php_1a0fc10b64683021b70c7eb95fb514c119"/><section>
+    <title>getUsers()</title>
+<indexterm><primary>getUsers</primary><secondary>admin.php</secondary></indexterm>
+<indexterm><primary>admin.php</primary><secondary>getUsers</secondary></indexterm>
+<para><computeroutput>getUsers ( )</computeroutput></para><para>
+
+<para>Fonction pour récupérer tous les utilisateurs de la base de données. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>array Tableau contenant tous les utilisateurs. </para>
+</formalpara>
+</para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_admin_8php_1a2510eb6d1c69e6d1ef998b3f871ae327"/><section>
+    <title>$activeTab</title>
+<indexterm><primary>$activeTab</primary><secondary>admin.php</secondary></indexterm>
+<indexterm><primary>admin.php</primary><secondary>$activeTab</secondary></indexterm>
+<para><computeroutput>$activeTab = isset($_GET[&apos;tab&apos;]) ? $_GET[&apos;tab&apos;] : &apos;&apos;</computeroutput></para><para>
+
+<para>Sélectionne l&apos;onglet actif (tab) à afficher dans l&apos;interface d&apos;administration. </para>
+</para>
+</section>
+<anchor xml:id="_admin_8php_1a0d9c79b9b86b3f5891c6d3892f12c6a0"/><section>
+    <title>$connection</title>
+<indexterm><primary>$connection</primary><secondary>admin.php</secondary></indexterm>
+<indexterm><primary>admin.php</primary><secondary>$connection</secondary></indexterm>
+<para><computeroutput>$connection = mysqli_connect($host, $user, $password, $database)</computeroutput></para></section>
+<anchor xml:id="_admin_8php_1a7691c0162d89de0b6ba47edcd8ba8878"/><section>
+    <title>$database</title>
+<indexterm><primary>$database</primary><secondary>admin.php</secondary></indexterm>
+<indexterm><primary>admin.php</primary><secondary>$database</secondary></indexterm>
+<para><computeroutput>$database = &apos;E-commerce&apos;</computeroutput></para></section>
+<anchor xml:id="_admin_8php_1a711797613cb863ca0756df789c396bf2"/><section>
+    <title>$host</title>
+<indexterm><primary>$host</primary><secondary>admin.php</secondary></indexterm>
+<indexterm><primary>admin.php</primary><secondary>$host</secondary></indexterm>
+<para><computeroutput>$host = &apos;localhost&apos;</computeroutput></para></section>
+<anchor xml:id="_admin_8php_1a607686ef9f99ea7c42f4f3dd3dbb2b0d"/><section>
+    <title>$password</title>
+<indexterm><primary>$password</primary><secondary>admin.php</secondary></indexterm>
+<indexterm><primary>admin.php</primary><secondary>$password</secondary></indexterm>
+<para><computeroutput>$password = &apos;Stage2023*&apos;</computeroutput></para></section>
+<anchor xml:id="_admin_8php_1a598ca4e71b15a1313ec95f0df1027ca5"/><section>
+    <title>$user</title>
+<indexterm><primary>$user</primary><secondary>admin.php</secondary></indexterm>
+<indexterm><primary>admin.php</primary><secondary>$user</secondary></indexterm>
+<para><computeroutput>$user = &apos;Ecommerce&apos;</computeroutput></para></section>
+<anchor xml:id="_admin_8php_1a2b013dddda13238596beb22b101b52e6"/><section>
+    <title>elseif</title>
+<indexterm><primary>elseif</primary><secondary>admin.php</secondary></indexterm>
+<indexterm><primary>admin.php</primary><secondary>elseif</secondary></indexterm>
+<para><computeroutput><link linkend="_login_8php_1a9f932b726f4a6523e9b11a33c9dd647c">if</link>( $activeTab===&apos;add_product&apos;) elseif($activeTab===&apos;view_products&apos;) elseif($activeTab===&apos;user_management&apos;) ( $activeTab = <computeroutput>==&#160;&apos;user_management&apos;</computeroutput>
+)</computeroutput></para></section>
+</section>
+</section>

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_cc20a749fcfd168015a6c87b45e6f660" xml:lang="en-US">
+<title>/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view Directory Reference</title>
+<indexterm><primary>/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_add_8product_8php">add.product.php</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_admin_8php">admin.php</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_categories_8php">categories.php</link></para>
+
+<para>Page affichant les catégories et sous-catégories des produits. </para>
+</listitem>
+            <listitem><para>file <link linkend="_delete__product_8php">delete_product.php</link></para>
+
+<para>Script pour supprimer un produit de la base de données. </para>
+</listitem>
+            <listitem><para>file <link linkend="_edit__product_8php">edit_product.php</link></para>
+
+<para>Page pour modifier un produit existant dans la base de données. </para>
+</listitem>
+            <listitem><para>file <link linkend="_footer_8php">footer.php</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_formulaire_8php">formulaire.php</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_home_8php">home.php</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_login_8php">login.php</link></para>
+
+<para>Page de connexion utilisateur. </para>
+</listitem>
+            <listitem><para>file <link linkend="_logout_8php">logout.php</link></para>
+
+<para>Page de déconnexion utilisateur. </para>
+</listitem>
+            <listitem><para>file <link linkend="_navbar_8php">navbar.php</link></para>
+
+<para>Barre de navigation du site. </para>
+</listitem>
+            <listitem><para>file <link linkend="_notfound_8php">notfound.php</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_panier_8php">panier.php</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_product_8php">product.php</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_product__listing_8php">product_listing.php</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_register_8php">register.php</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_update__product_8php">update_product.php</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

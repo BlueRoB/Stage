@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_edit__product_8php" xml:lang="en-US">
+<title>/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/edit_product.php File Reference</title>
+<indexterm><primary>/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/edit_product.php</primary></indexterm>
+<para>
+
+<para>Page pour modifier un produit existant dans la base de données. </para>
+ 
+</para>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_edit__product_8php_1a711797613cb863ca0756df789c396bf2">$host</link> = &apos;localhost&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_edit__product_8php_1a598ca4e71b15a1313ec95f0df1027ca5">$user</link> = &apos;Ecommerce&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_edit__product_8php_1a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</link> = &apos;Stage2023*&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_edit__product_8php_1a7691c0162d89de0b6ba47edcd8ba8878">$database</link> = &apos;E-commerce&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_edit__product_8php_1a0d9c79b9b86b3f5891c6d3892f12c6a0">$connection</link> = mysqli_connect($host, $user, $password, $database)</para>
+</listitem>
+            <listitem><para><link linkend="_login_8php_1a9f932b726f4a6523e9b11a33c9dd647c">if</link>(! $connection) <link linkend="_edit__product_8php_1a3306683dc956c671f293b01e042c3ee2">$product</link> = null</para>
+</listitem>
+            <listitem><para><link linkend="_login_8php_1a9f932b726f4a6523e9b11a33c9dd647c">if</link>($_SERVER[&apos;REQUEST_METHOD&apos;]===&apos;POST&apos;) <link linkend="_edit__product_8php_1ad6d6fff117fd0a3f7e5893e8d2785c4e">else</link></para>
+</listitem>
+            <listitem><para><link linkend="_edit__product_8php_1a6733eb5f605d09eaede9845835d71c4e">exit</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Page pour modifier un produit existant dans la base de données. </para>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_edit__product_8php_1a0d9c79b9b86b3f5891c6d3892f12c6a0"/><section>
+    <title>$connection</title>
+<indexterm><primary>$connection</primary><secondary>edit_product.php</secondary></indexterm>
+<indexterm><primary>edit_product.php</primary><secondary>$connection</secondary></indexterm>
+<para><computeroutput>$connection = mysqli_connect($host, $user, $password, $database)</computeroutput></para>
+<para>Connexion à la base de données. </para>
+</section>
+<anchor xml:id="_edit__product_8php_1a7691c0162d89de0b6ba47edcd8ba8878"/><section>
+    <title>$database</title>
+<indexterm><primary>$database</primary><secondary>edit_product.php</secondary></indexterm>
+<indexterm><primary>edit_product.php</primary><secondary>$database</secondary></indexterm>
+<para><computeroutput>$database = &apos;E-commerce&apos;</computeroutput></para>
+<para>Nom de la base de données. </para>
+</section>
+<anchor xml:id="_edit__product_8php_1a711797613cb863ca0756df789c396bf2"/><section>
+    <title>$host</title>
+<indexterm><primary>$host</primary><secondary>edit_product.php</secondary></indexterm>
+<indexterm><primary>edit_product.php</primary><secondary>$host</secondary></indexterm>
+<para><computeroutput>$host = &apos;localhost&apos;</computeroutput></para>
+<para>Adresse du serveur de base de données. </para>
+</section>
+<anchor xml:id="_edit__product_8php_1a607686ef9f99ea7c42f4f3dd3dbb2b0d"/><section>
+    <title>$password</title>
+<indexterm><primary>$password</primary><secondary>edit_product.php</secondary></indexterm>
+<indexterm><primary>edit_product.php</primary><secondary>$password</secondary></indexterm>
+<para><computeroutput>$password = &apos;Stage2023*&apos;</computeroutput></para>
+<para>Mot de passe de la base de données. </para>
+</section>
+<anchor xml:id="_edit__product_8php_1a3306683dc956c671f293b01e042c3ee2"/><section>
+    <title>$product</title>
+<indexterm><primary>$product</primary><secondary>edit_product.php</secondary></indexterm>
+<indexterm><primary>edit_product.php</primary><secondary>$product</secondary></indexterm>
+<para><computeroutput><link linkend="_login_8php_1a9f932b726f4a6523e9b11a33c9dd647c">if</link> (! $connection) $product = null</computeroutput></para>
+<para>Tableau pour stocker les informations du produit. </para>
+</section>
+<anchor xml:id="_edit__product_8php_1a598ca4e71b15a1313ec95f0df1027ca5"/><section>
+    <title>$user</title>
+<indexterm><primary>$user</primary><secondary>edit_product.php</secondary></indexterm>
+<indexterm><primary>edit_product.php</primary><secondary>$user</secondary></indexterm>
+<para><computeroutput>$user = &apos;Ecommerce&apos;</computeroutput></para>
+<para>Nom d&apos;utilisateur de la base de données. </para>
+</section>
+<anchor xml:id="_edit__product_8php_1ad6d6fff117fd0a3f7e5893e8d2785c4e"/><section>
+    <title>else</title>
+<indexterm><primary>else</primary><secondary>edit_product.php</secondary></indexterm>
+<indexterm><primary>edit_product.php</primary><secondary>else</secondary></indexterm>
+<para><computeroutput><link linkend="_login_8php_1a9f932b726f4a6523e9b11a33c9dd647c">if</link> ( $_SERVER[ &apos;REQUEST_METHOD&apos;]===&apos;POST&apos;) else</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">{
+&#32;&#32;&#32;&#32;
+&#32;&#32;&#32;&#32;header(<emphasis role="stringliteral">&quot;Location:&#32;admin.php?tab=view_products&quot;</emphasis>)
+</programlisting></section>
+<anchor xml:id="_edit__product_8php_1a6733eb5f605d09eaede9845835d71c4e"/><section>
+    <title>exit</title>
+<indexterm><primary>exit</primary><secondary>edit_product.php</secondary></indexterm>
+<indexterm><primary>edit_product.php</primary><secondary>exit</secondary></indexterm>
+<para><computeroutput>exit</computeroutput></para></section>
+</section>
+</section>

@@ -11,7 +11,10 @@ if (!$connection) {
 }
 
 
-
+/**
+ * @brief Fonction pour récupérer tous les produits de la base de données.
+ * @return array Tableau contenant tous les produits.
+ */
     function getProducts() {
         global $connection;
 
@@ -27,7 +30,10 @@ if (!$connection) {
 
         return $products;
     }
-
+/**
+ * @brief Fonction pour récupérer tous les utilisateurs de la base de données.
+ * @return array Tableau contenant tous les utilisateurs.
+ */
     function getUsers() {
         global $connection;
 
@@ -44,7 +50,11 @@ if (!$connection) {
         return $users;
     }
 
-
+/**
+ * @brief Fonction pour supprimer un produit de la base de données.
+ * @param int $product_id L'identifiant du produit à supprimer.
+ * @return bool Renvoie true si la suppression réussit, sinon false.
+ */
     function deleteProduct($product_id)
     {
         global $connection;
@@ -107,6 +117,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     ?>
 
 <?php
+/**
+ * @brief Sélectionne l'onglet actif (tab) à afficher dans l'interface d'administration.
+ */
     $activeTab = isset($_GET['tab']) ? $_GET['tab'] : '';
 
 
@@ -239,8 +252,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <tbody>
                 <?php foreach ($users as $user) { ?>
                     <tr>
-                        <td><?php echo $user['id']; ?></td>
-                        <td><?php echo $user['name']; ?></td>
+                        <td><?php echo $user['user_id']; ?></td>
+                        <td><?php echo $user['user_name']; ?></td>
                         <td><?php echo $user['email']; ?></td>
                         <td>
                             <a href="#">Edit</a> |

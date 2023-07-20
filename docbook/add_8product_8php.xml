@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_add_8product_8php" xml:lang="en-US">
+<title>/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/add.product.php File Reference</title>
+<indexterm><primary>/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/add.product.php</primary></indexterm>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_add_8product_8php_1a01d6af4b83d900dee8e0da689894ff61">$host</link> = &apos;localhost&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_add_8product_8php_1a6fccfa6d6f19a0faaf3a85a04093d56d">$user</link> = &apos;Ecommerce&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_add_8product_8php_1a99f6264ab0c9eac3199f38350ea0703d">$password</link> = &apos;Stage2023*&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_add_8product_8php_1ae9e9bfe9472fbb797496dd93640cde9a">$database</link> = &apos;E-commerce&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_add_8product_8php_1ad41493489446c1445e397080df6f03d1">$connection</link> = mysqli_connect($host, $user, $password, $database)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Ce fichier contient le code pour insérer un nouveau produit dans la base de données. </para>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_add_8product_8php_1ad41493489446c1445e397080df6f03d1"/><section>
+    <title>$connection</title>
+<indexterm><primary>$connection</primary><secondary>add.product.php</secondary></indexterm>
+<indexterm><primary>add.product.php</primary><secondary>$connection</secondary></indexterm>
+<para><computeroutput>mysqli $connection = mysqli_connect($host, $user, $password, $database)</computeroutput></para>
+<para>Objet de connexion à la base de données MySQL. </para>
+
+<para>Vérifie si un fichier image a été sélectionné pour le produit. Si oui, traite et enregistre le fichier, puis insère les données du produit dans la base de données.</para>
+
+<para>Vérifie si le type du fichier image est autorisé. Si c&apos;est le cas, déplace le fichier téléchargé vers le répertoire cible et effectue l&apos;insertion dans la base de données.</para>
+
+<para>Déplace le fichier téléchargé vers le répertoire cible. Si le déplacement réussit, insère les données du produit dans la base de données. Sinon, affiche un message d&apos;erreur.</para>
+
+<para>Exécute la requête d&apos;insertion dans la base de données. Si l&apos;insertion réussit, ferme la connexion à la base de données, redirige vers la page d&apos;administration et arrête l&apos;exécution du script. Sinon, affiche un message d&apos;erreur SQL.</para>
+</section>
+<anchor xml:id="_add_8product_8php_1ae9e9bfe9472fbb797496dd93640cde9a"/><section>
+    <title>$database</title>
+<indexterm><primary>$database</primary><secondary>add.product.php</secondary></indexterm>
+<indexterm><primary>add.product.php</primary><secondary>$database</secondary></indexterm>
+<para><computeroutput>string $database = &apos;E-commerce&apos;</computeroutput></para>
+<para>Nom de la base de données à laquelle se connecter. </para>
+</section>
+<anchor xml:id="_add_8product_8php_1a01d6af4b83d900dee8e0da689894ff61"/><section>
+    <title>$host</title>
+<indexterm><primary>$host</primary><secondary>add.product.php</secondary></indexterm>
+<indexterm><primary>add.product.php</primary><secondary>$host</secondary></indexterm>
+<para><computeroutput>string $host = &apos;localhost&apos;</computeroutput></para>
+<para>Adresse de l&apos;hôte MySQL pour la connexion à la base de données. </para>
+</section>
+<anchor xml:id="_add_8product_8php_1a99f6264ab0c9eac3199f38350ea0703d"/><section>
+    <title>$password</title>
+<indexterm><primary>$password</primary><secondary>add.product.php</secondary></indexterm>
+<indexterm><primary>add.product.php</primary><secondary>$password</secondary></indexterm>
+<para><computeroutput>string $password = &apos;Stage2023*&apos;</computeroutput></para>
+<para>Mot de passe pour la connexion à la base de données. </para>
+</section>
+<anchor xml:id="_add_8product_8php_1a6fccfa6d6f19a0faaf3a85a04093d56d"/><section>
+    <title>$user</title>
+<indexterm><primary>$user</primary><secondary>add.product.php</secondary></indexterm>
+<indexterm><primary>add.product.php</primary><secondary>$user</secondary></indexterm>
+<para><computeroutput>string $user = &apos;Ecommerce&apos;</computeroutput></para>
+<para>Nom d&apos;utilisateur pour la connexion à la base de données. </para>
+</section>
+</section>
+</section>

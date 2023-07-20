@@ -1,0 +1,109 @@
+\doxysection{/\+Applications/\+XAMPP/xamppfiles/htdocs/\+WEB/\+Stage/view/register.php File Reference}
+\hypertarget{register_8php}{}\label{register_8php}\index{/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/register.php@{/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/register.php}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}}(! \$connection) \mbox{\hyperlink{register_8php_a2ce8980b5e3ff0675c0c73b44b783d8f}{hash\+Password}} (\$password)
+\item 
+\mbox{\hyperlink{register_8php_a3b329bafa00fd983980e1995b1f1f4d6}{validate\+Form}} (\$name, \$email, \$password, \$confirm\+Password)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{register_8php_a711797613cb863ca0756df789c396bf2}{\$host}} = \textquotesingle{}localhost\textquotesingle{}
+\item 
+\mbox{\hyperlink{register_8php_a598ca4e71b15a1313ec95f0df1027ca5}{\$user}} = \textquotesingle{}Ecommerce\textquotesingle{}
+\item 
+\mbox{\hyperlink{register_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{\$password}} = \textquotesingle{}Stage2023\texorpdfstring{$\ast$}{*}\textquotesingle{}
+\item 
+\mbox{\hyperlink{register_8php_a7691c0162d89de0b6ba47edcd8ba8878}{\$database}} = \textquotesingle{}E-\/commerce\textquotesingle{}
+\item 
+\mbox{\hyperlink{register_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}} = mysqli\+\_\+connect(\$host, \$user, \$password, \$database)
+\item 
+\mbox{\hyperlink{register_8php_acef07028287f408decc151d2e0560efa}{if}} (!empty( \$errors))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Page d\textquotesingle{}inscription des utilisateurs.
+
+Cette page permet aux utilisateurs de s\textquotesingle{}inscrire en remplissant un formulaire avec leur nom, adresse e-\/mail, mot de passe et confirmation de mot de passe. Les informations sont ensuite validées et stockées dans la base de données. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{register_8php_a2ce8980b5e3ff0675c0c73b44b783d8f}\label{register_8php_a2ce8980b5e3ff0675c0c73b44b783d8f} 
+\index{register.php@{register.php}!hashPassword@{hashPassword}}
+\index{hashPassword@{hashPassword}!register.php@{register.php}}
+\doxysubsubsection{\texorpdfstring{hashPassword()}{hashPassword()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}}(! \$connection) hash\+Password (\begin{DoxyParamCaption}\item[{}]{\$password }\end{DoxyParamCaption})}
+
+Fonction pour hasher le mot de passe.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$password} & Le mot de passe à hasher. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Le mot de passe hashé. 
+\end{DoxyReturn}
+\Hypertarget{register_8php_a3b329bafa00fd983980e1995b1f1f4d6}\label{register_8php_a3b329bafa00fd983980e1995b1f1f4d6} 
+\index{register.php@{register.php}!validateForm@{validateForm}}
+\index{validateForm@{validateForm}!register.php@{register.php}}
+\doxysubsubsection{\texorpdfstring{validateForm()}{validateForm()}}
+{\footnotesize\ttfamily validate\+Form (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{}]{\$email,  }\item[{}]{\$password,  }\item[{}]{\$confirm\+Password }\end{DoxyParamCaption})}
+
+Fonction pour valider les champs du formulaire.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Le nom de l\textquotesingle{}utilisateur. \\
+\hline
+string & {\em \$email} & L\textquotesingle{}adresse e-\/mail de l\textquotesingle{}utilisateur. \\
+\hline
+string & {\em \$password} & Le mot de passe de l\textquotesingle{}utilisateur. \\
+\hline
+string & {\em \$confirm\+Password} & La confirmation du mot de passe de l\textquotesingle{}utilisateur. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Un tableau contenant les erreurs de validation. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{register_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}\label{register_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0} 
+\index{register.php@{register.php}!\$connection@{\$connection}}
+\index{\$connection@{\$connection}!register.php@{register.php}}
+\doxysubsubsection{\texorpdfstring{\$connection}{\$connection}}
+{\footnotesize\ttfamily \$connection = mysqli\+\_\+connect(\$host, \$user, \$password, \$database)}
+
+\Hypertarget{register_8php_a7691c0162d89de0b6ba47edcd8ba8878}\label{register_8php_a7691c0162d89de0b6ba47edcd8ba8878} 
+\index{register.php@{register.php}!\$database@{\$database}}
+\index{\$database@{\$database}!register.php@{register.php}}
+\doxysubsubsection{\texorpdfstring{\$database}{\$database}}
+{\footnotesize\ttfamily \$database = \textquotesingle{}E-\/commerce\textquotesingle{}}
+
+\Hypertarget{register_8php_a711797613cb863ca0756df789c396bf2}\label{register_8php_a711797613cb863ca0756df789c396bf2} 
+\index{register.php@{register.php}!\$host@{\$host}}
+\index{\$host@{\$host}!register.php@{register.php}}
+\doxysubsubsection{\texorpdfstring{\$host}{\$host}}
+{\footnotesize\ttfamily \$host = \textquotesingle{}localhost\textquotesingle{}}
+
+\Hypertarget{register_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}\label{register_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d} 
+\index{register.php@{register.php}!\$password@{\$password}}
+\index{\$password@{\$password}!register.php@{register.php}}
+\doxysubsubsection{\texorpdfstring{\$password}{\$password}}
+{\footnotesize\ttfamily \$password = \textquotesingle{}Stage2023\texorpdfstring{$\ast$}{*}\textquotesingle{}}
+
+\Hypertarget{register_8php_a598ca4e71b15a1313ec95f0df1027ca5}\label{register_8php_a598ca4e71b15a1313ec95f0df1027ca5} 
+\index{register.php@{register.php}!\$user@{\$user}}
+\index{\$user@{\$user}!register.php@{register.php}}
+\doxysubsubsection{\texorpdfstring{\$user}{\$user}}
+{\footnotesize\ttfamily \$user = \textquotesingle{}Ecommerce\textquotesingle{}}
+
+\Hypertarget{register_8php_acef07028287f408decc151d2e0560efa}\label{register_8php_acef07028287f408decc151d2e0560efa} 
+\index{register.php@{register.php}!if@{if}}
+\index{if@{if}!register.php@{register.php}}
+\doxysubsubsection{\texorpdfstring{if}{if}}
+{\footnotesize\ttfamily if(!empty(\$errors)) (\begin{DoxyParamCaption}\item[{!}]{empty \$errors }\end{DoxyParamCaption})}
+

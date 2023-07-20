@@ -1,0 +1,47 @@
+\doxysection{/\+Applications/\+XAMPP/xamppfiles/htdocs/\+WEB/\+Stage/view/panier.php File Reference}
+\hypertarget{panier_8php}{}\label{panier_8php}\index{/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/panier.php@{/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/panier.php}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{panier_8php_a757ee748f7d55915e45fe8802c070509}{if}} ( \$\+\_\+\+SERVER\mbox{[} \textquotesingle{}REQUEST\+\_\+\+METHOD\textquotesingle{}\mbox{]}===\textquotesingle{}POST\textquotesingle{})
+\item 
+\mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}}(!empty(\$\+\_\+\+SESSION\mbox{[}\textquotesingle{}cart\textquotesingle{}\mbox{]})) \mbox{\hyperlink{panier_8php_a4f8b81ff07793e372b80ba4857d6671f}{else}}
+\item 
+\mbox{\hyperlink{panier_8php_ab4840cef90526bcc7a3d1889038def98}{\$total\+\_\+price}} = 0
+\item 
+\mbox{\hyperlink{panier_8php_a730ec9abdbfb8e761dd3f9d82b8d4a91}{if}} (!empty( \$\+\_\+\+SESSION\mbox{[} \textquotesingle{}cart\textquotesingle{}\mbox{]}))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{panier_8php_ab4840cef90526bcc7a3d1889038def98}\label{panier_8php_ab4840cef90526bcc7a3d1889038def98} 
+\index{panier.php@{panier.php}!\$total\_price@{\$total\_price}}
+\index{\$total\_price@{\$total\_price}!panier.php@{panier.php}}
+\doxysubsubsection{\texorpdfstring{\$total\_price}{\$total\_price}}
+{\footnotesize\ttfamily \$total\+\_\+price = 0}
+
+\Hypertarget{panier_8php_a4f8b81ff07793e372b80ba4857d6671f}\label{panier_8php_a4f8b81ff07793e372b80ba4857d6671f} 
+\index{panier.php@{panier.php}!else@{else}}
+\index{else@{else}!panier.php@{panier.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}} (!empty( \$\+\_\+\+SESSION\mbox{[} \textquotesingle{}cart\textquotesingle{}\mbox{]})) else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ echo\ \textcolor{stringliteral}{'<p>Votre\ panier\ est\ vide.</p>'}}
+
+\end{DoxyCode}
+\Hypertarget{panier_8php_a757ee748f7d55915e45fe8802c070509}\label{panier_8php_a757ee748f7d55915e45fe8802c070509} 
+\index{panier.php@{panier.php}!if@{if}}
+\index{if@{if}!panier.php@{panier.php}}
+\doxysubsubsection{\texorpdfstring{if}{if}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily if(\$\+\_\+\+SERVER\mbox{[}\textquotesingle{}REQUEST\+\_\+\+METHOD\textquotesingle{}\mbox{]}===\textquotesingle{}POST\textquotesingle{}) (\begin{DoxyParamCaption}\item[{}]{\$\+\_\+\+SERVER\mbox{[} \textquotesingle{}\+REQUEST\+\_\+\+METHOD\textquotesingle{}\mbox{]} = {\ttfamily ==~\textquotesingle{}POST\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\Hypertarget{panier_8php_a730ec9abdbfb8e761dd3f9d82b8d4a91}\label{panier_8php_a730ec9abdbfb8e761dd3f9d82b8d4a91} 
+\index{panier.php@{panier.php}!if@{if}}
+\index{if@{if}!panier.php@{panier.php}}
+\doxysubsubsection{\texorpdfstring{if}{if}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily if(!empty(\$\+\_\+\+SESSION\mbox{[}\textquotesingle{}cart\textquotesingle{}\mbox{]})) (\begin{DoxyParamCaption}\item[{!}]{empty \$\+\_\+\+SESSION\mbox{[} \textquotesingle{}cart\textquotesingle{}\mbox{]} }\end{DoxyParamCaption})}
+

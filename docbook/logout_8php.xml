@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_logout_8php" xml:lang="en-US">
+<title>/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/logout.php File Reference</title>
+<indexterm><primary>/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/logout.php</primary></indexterm>
+<para>
+
+<para>Page de déconnexion utilisateur. </para>
+ 
+</para>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_logout_8php_1a5f545b9684799a00f7a14442205b98e3">$_SESSION</link> = []</para>
+
+<para>Supprime toutes les données de la session et détruit la session. </para>
+</listitem>
+            <listitem><para><link linkend="_logout_8php_1a6733eb5f605d09eaede9845835d71c4e">exit</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Page de déconnexion utilisateur. </para>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_logout_8php_1a5f545b9684799a00f7a14442205b98e3"/><section>
+    <title>$_SESSION</title>
+<indexterm><primary>$_SESSION</primary><secondary>logout.php</secondary></indexterm>
+<indexterm><primary>logout.php</primary><secondary>$_SESSION</secondary></indexterm>
+<para><computeroutput>$_SESSION = []</computeroutput></para><para>
+
+<para>Supprime toutes les données de la session et détruit la session. </para>
+</para>
+</section>
+<anchor xml:id="_logout_8php_1a6733eb5f605d09eaede9845835d71c4e"/><section>
+    <title>exit</title>
+<indexterm><primary>exit</primary><secondary>logout.php</secondary></indexterm>
+<indexterm><primary>logout.php</primary><secondary>exit</secondary></indexterm>
+<para><computeroutput>exit</computeroutput></para></section>
+</section>
+</section>

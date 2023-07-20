@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_register_8php" xml:lang="en-US">
+<title>/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/register.php File Reference</title>
+<indexterm><primary>/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/register.php</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_login_8php_1a9f932b726f4a6523e9b11a33c9dd647c">if</link>(! $connection) <link linkend="_register_8php_1a2ce8980b5e3ff0675c0c73b44b783d8f">hashPassword</link> ($password)</para>
+</listitem>
+            <listitem><para><link linkend="_register_8php_1a3b329bafa00fd983980e1995b1f1f4d6">validateForm</link> ($name, $email, $password, $confirmPassword)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_register_8php_1a711797613cb863ca0756df789c396bf2">$host</link> = &apos;localhost&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_register_8php_1a598ca4e71b15a1313ec95f0df1027ca5">$user</link> = &apos;Ecommerce&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_register_8php_1a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</link> = &apos;Stage2023*&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_register_8php_1a7691c0162d89de0b6ba47edcd8ba8878">$database</link> = &apos;E-commerce&apos;</para>
+</listitem>
+            <listitem><para><link linkend="_register_8php_1a0d9c79b9b86b3f5891c6d3892f12c6a0">$connection</link> = mysqli_connect($host, $user, $password, $database)</para>
+</listitem>
+            <listitem><para><link linkend="_register_8php_1acef07028287f408decc151d2e0560efa">if</link> (!empty( $errors))</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Page d&apos;inscription des utilisateurs.</para>
+
+<para>Cette page permet aux utilisateurs de s&apos;inscrire en remplissant un formulaire avec leur nom, adresse e-mail, mot de passe et confirmation de mot de passe. Les informations sont ensuite validées et stockées dans la base de données. </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_register_8php_1a2ce8980b5e3ff0675c0c73b44b783d8f"/><section>
+    <title>hashPassword()</title>
+<indexterm><primary>hashPassword</primary><secondary>register.php</secondary></indexterm>
+<indexterm><primary>register.php</primary><secondary>hashPassword</secondary></indexterm>
+<para><computeroutput><link linkend="_login_8php_1a9f932b726f4a6523e9b11a33c9dd647c">if</link>(! $connection) hashPassword ( $password)</computeroutput></para>
+<para>Fonction pour hasher le mot de passe.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>string</entry><entry>$password</entry><entry>
+<para>Le mot de passe à hasher. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>string Le mot de passe hashé. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_register_8php_1a3b329bafa00fd983980e1995b1f1f4d6"/><section>
+    <title>validateForm()</title>
+<indexterm><primary>validateForm</primary><secondary>register.php</secondary></indexterm>
+<indexterm><primary>register.php</primary><secondary>validateForm</secondary></indexterm>
+<para><computeroutput>validateForm ( $name,  $email,  $password,  $confirmPassword)</computeroutput></para>
+<para>Fonction pour valider les champs du formulaire.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>string</entry><entry>$name</entry><entry>
+<para>Le nom de l&apos;utilisateur. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>string</entry><entry>$email</entry><entry>
+<para>L&apos;adresse e-mail de l&apos;utilisateur. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>string</entry><entry>$password</entry><entry>
+<para>Le mot de passe de l&apos;utilisateur. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>string</entry><entry>$confirmPassword</entry><entry>
+<para>La confirmation du mot de passe de l&apos;utilisateur. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>array Un tableau contenant les erreurs de validation. </para>
+</formalpara>
+</para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_register_8php_1a0d9c79b9b86b3f5891c6d3892f12c6a0"/><section>
+    <title>$connection</title>
+<indexterm><primary>$connection</primary><secondary>register.php</secondary></indexterm>
+<indexterm><primary>register.php</primary><secondary>$connection</secondary></indexterm>
+<para><computeroutput>$connection = mysqli_connect($host, $user, $password, $database)</computeroutput></para></section>
+<anchor xml:id="_register_8php_1a7691c0162d89de0b6ba47edcd8ba8878"/><section>
+    <title>$database</title>
+<indexterm><primary>$database</primary><secondary>register.php</secondary></indexterm>
+<indexterm><primary>register.php</primary><secondary>$database</secondary></indexterm>
+<para><computeroutput>$database = &apos;E-commerce&apos;</computeroutput></para></section>
+<anchor xml:id="_register_8php_1a711797613cb863ca0756df789c396bf2"/><section>
+    <title>$host</title>
+<indexterm><primary>$host</primary><secondary>register.php</secondary></indexterm>
+<indexterm><primary>register.php</primary><secondary>$host</secondary></indexterm>
+<para><computeroutput>$host = &apos;localhost&apos;</computeroutput></para></section>
+<anchor xml:id="_register_8php_1a607686ef9f99ea7c42f4f3dd3dbb2b0d"/><section>
+    <title>$password</title>
+<indexterm><primary>$password</primary><secondary>register.php</secondary></indexterm>
+<indexterm><primary>register.php</primary><secondary>$password</secondary></indexterm>
+<para><computeroutput>$password = &apos;Stage2023*&apos;</computeroutput></para></section>
+<anchor xml:id="_register_8php_1a598ca4e71b15a1313ec95f0df1027ca5"/><section>
+    <title>$user</title>
+<indexterm><primary>$user</primary><secondary>register.php</secondary></indexterm>
+<indexterm><primary>register.php</primary><secondary>$user</secondary></indexterm>
+<para><computeroutput>$user = &apos;Ecommerce&apos;</computeroutput></para></section>
+<anchor xml:id="_register_8php_1acef07028287f408decc151d2e0560efa"/><section>
+    <title>if</title>
+<indexterm><primary>if</primary><secondary>register.php</secondary></indexterm>
+<indexterm><primary>register.php</primary><secondary>if</secondary></indexterm>
+<para><computeroutput>if(!empty($errors)) (! empty $errors)</computeroutput></para></section>
+</section>
+</section>

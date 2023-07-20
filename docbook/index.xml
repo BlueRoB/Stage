@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="en-US">
+    <info>
+    <title>Stage2023</title>
+    </info>
+<chapter>
+    <title>File Documentation</title>
+    <xi:include href="add_8product_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="admin_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="categories_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="delete__product_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="edit__product_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="footer_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="formulaire_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="home_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="login_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="logout_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="navbar_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="notfound_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="panier_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="product_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="product__listing_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="register_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="update__product_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

@@ -1,0 +1,98 @@
+\doxysection{/\+Applications/\+XAMPP/xamppfiles/htdocs/\+WEB/\+Stage/view/login.php File Reference}
+\hypertarget{login_8php}{}\label{login_8php}\index{/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/login.php@{/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/login.php}}
+
+
+Page de connexion utilisateur.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}}(! \$connection) \mbox{\hyperlink{login_8php_a813ea608b974a67298f9d76b95b5c913}{verify\+Password}} (\$password, \$hashed\+Password)
+\begin{DoxyCompactList}\small\item\em Vérifie si la connexion à la base de données a échoué. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}}(isset(\$\+\_\+\+SESSION\mbox{[}\textquotesingle{}user\+\_\+id\textquotesingle{}\mbox{]})) \mbox{\hyperlink{login_8php_ab1bdbde5e5b4f519c2bd92f5b9d2289a}{\$host}} = \textquotesingle{}localhost\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Redirige l\textquotesingle{}utilisateur vers la page d\textquotesingle{}accueil s\textquotesingle{}il est déjà connecté. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{login_8php_a598ca4e71b15a1313ec95f0df1027ca5}{\$user}} = \textquotesingle{}Ecommerce\textquotesingle{}
+\item 
+\mbox{\hyperlink{login_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{\$password}} = \textquotesingle{}Stage2023\texorpdfstring{$\ast$}{*}\textquotesingle{}
+\item 
+\mbox{\hyperlink{login_8php_a7691c0162d89de0b6ba47edcd8ba8878}{\$database}} = \textquotesingle{}E-\/commerce\textquotesingle{}
+\item 
+\mbox{\hyperlink{login_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}} = mysqli\+\_\+connect(\$host, \$user, \$password, \$database)
+\item 
+\mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}} (isset( \$error))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Page de connexion utilisateur. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{login_8php_a813ea608b974a67298f9d76b95b5c913}\label{login_8php_a813ea608b974a67298f9d76b95b5c913} 
+\index{login.php@{login.php}!verifyPassword@{verifyPassword}}
+\index{verifyPassword@{verifyPassword}!login.php@{login.php}}
+\doxysubsubsection{\texorpdfstring{verifyPassword()}{verifyPassword()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}}(! \$connection) verify\+Password (\begin{DoxyParamCaption}\item[{}]{\$password,  }\item[{}]{\$hashed\+Password }\end{DoxyParamCaption})}
+
+
+
+Vérifie si la connexion à la base de données a échoué. 
+
+Vérifie si le mot de passe est correct en le comparant avec le mot de passe haché stocké en base de données. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$password} & Le mot de passe saisi par l\textquotesingle{}utilisateur. \\
+\hline
+string & {\em \$hashed\+Password} & Le mot de passe haché stocké en base de données. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Retourne true si le mot de passe est correct, sinon false. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{login_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}\label{login_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0} 
+\index{login.php@{login.php}!\$connection@{\$connection}}
+\index{\$connection@{\$connection}!login.php@{login.php}}
+\doxysubsubsection{\texorpdfstring{\$connection}{\$connection}}
+{\footnotesize\ttfamily \$connection = mysqli\+\_\+connect(\$host, \$user, \$password, \$database)}
+
+\Hypertarget{login_8php_a7691c0162d89de0b6ba47edcd8ba8878}\label{login_8php_a7691c0162d89de0b6ba47edcd8ba8878} 
+\index{login.php@{login.php}!\$database@{\$database}}
+\index{\$database@{\$database}!login.php@{login.php}}
+\doxysubsubsection{\texorpdfstring{\$database}{\$database}}
+{\footnotesize\ttfamily \$database = \textquotesingle{}E-\/commerce\textquotesingle{}}
+
+\Hypertarget{login_8php_ab1bdbde5e5b4f519c2bd92f5b9d2289a}\label{login_8php_ab1bdbde5e5b4f519c2bd92f5b9d2289a} 
+\index{login.php@{login.php}!\$host@{\$host}}
+\index{\$host@{\$host}!login.php@{login.php}}
+\doxysubsubsection{\texorpdfstring{\$host}{\$host}}
+{\footnotesize\ttfamily \mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}} (isset( \$\+\_\+\+SESSION\mbox{[} \textquotesingle{}user\+\_\+id\textquotesingle{}\mbox{]})) \$host = \textquotesingle{}localhost\textquotesingle{}}
+
+
+
+Redirige l\textquotesingle{}utilisateur vers la page d\textquotesingle{}accueil s\textquotesingle{}il est déjà connecté. 
+
+\Hypertarget{login_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}\label{login_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d} 
+\index{login.php@{login.php}!\$password@{\$password}}
+\index{\$password@{\$password}!login.php@{login.php}}
+\doxysubsubsection{\texorpdfstring{\$password}{\$password}}
+{\footnotesize\ttfamily \$password = \textquotesingle{}Stage2023\texorpdfstring{$\ast$}{*}\textquotesingle{}}
+
+\Hypertarget{login_8php_a598ca4e71b15a1313ec95f0df1027ca5}\label{login_8php_a598ca4e71b15a1313ec95f0df1027ca5} 
+\index{login.php@{login.php}!\$user@{\$user}}
+\index{\$user@{\$user}!login.php@{login.php}}
+\doxysubsubsection{\texorpdfstring{\$user}{\$user}}
+{\footnotesize\ttfamily \$user = \textquotesingle{}Ecommerce\textquotesingle{}}
+
+\Hypertarget{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}\label{login_8php_a9f932b726f4a6523e9b11a33c9dd647c} 
+\index{login.php@{login.php}!if@{if}}
+\index{if@{if}!login.php@{login.php}}
+\doxysubsubsection{\texorpdfstring{if}{if}}
+{\footnotesize\ttfamily if(isset(\$error)) (\begin{DoxyParamCaption}\item[{isset( \$error)}]{ }\end{DoxyParamCaption})}
+

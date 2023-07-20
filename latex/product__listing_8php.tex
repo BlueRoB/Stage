@@ -1,0 +1,86 @@
+\doxysection{/\+Applications/\+XAMPP/xamppfiles/htdocs/\+WEB/\+Stage/view/product\+\_\+listing.php File Reference}
+\hypertarget{product__listing_8php}{}\label{product__listing_8php}\index{/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/product\_listing.php@{/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/product\_listing.php}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{product__listing_8php_a915ccd63978de1ca6373615ff1f75fcf}{get\+Products\+By\+Category\+And\+Subcategory}} (\$category, \$subcategory, \$connection)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{product__listing_8php_a711797613cb863ca0756df789c396bf2}{\$host}} = \textquotesingle{}localhost\textquotesingle{}
+\item 
+\mbox{\hyperlink{product__listing_8php_a598ca4e71b15a1313ec95f0df1027ca5}{\$user}} = \textquotesingle{}Ecommerce\textquotesingle{}
+\item 
+\mbox{\hyperlink{product__listing_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{\$password}} = \textquotesingle{}Stage2023\texorpdfstring{$\ast$}{*}\textquotesingle{}
+\item 
+\mbox{\hyperlink{product__listing_8php_a7691c0162d89de0b6ba47edcd8ba8878}{\$database}} = \textquotesingle{}E-\/commerce\textquotesingle{}
+\item 
+\mbox{\hyperlink{product__listing_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}} = mysqli\+\_\+connect(\$host, \$user, \$password, \$database)
+\item 
+\mbox{\hyperlink{product__listing_8php_a42667b2dd63a617398f3a8ac725c7d5e}{if}} (! \$connection)
+\item 
+\mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}}(isset(\$\+\_\+\+GET\mbox{[}\textquotesingle{}category\textquotesingle{}\mbox{]}) \&\&isset(\$\+\_\+\+GET\mbox{[}\textquotesingle{}subcategory\textquotesingle{}\mbox{]})) \mbox{\hyperlink{product__listing_8php_a165ec09a85cdee81bb2317a25cd10650}{else}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{product__listing_8php_a915ccd63978de1ca6373615ff1f75fcf}\label{product__listing_8php_a915ccd63978de1ca6373615ff1f75fcf} 
+\index{product\_listing.php@{product\_listing.php}!getProductsByCategoryAndSubcategory@{getProductsByCategoryAndSubcategory}}
+\index{getProductsByCategoryAndSubcategory@{getProductsByCategoryAndSubcategory}!product\_listing.php@{product\_listing.php}}
+\doxysubsubsection{\texorpdfstring{getProductsByCategoryAndSubcategory()}{getProductsByCategoryAndSubcategory()}}
+{\footnotesize\ttfamily get\+Products\+By\+Category\+And\+Subcategory (\begin{DoxyParamCaption}\item[{}]{\$category,  }\item[{}]{\$subcategory,  }\item[{}]{\$connection }\end{DoxyParamCaption})}
+
+Fichier \doxylink{product__listing_8php}{product\+\_\+listing.\+php}
+
+Cette page affiche une liste de produits en fonction des catégories et sous-\/catégories sélectionnées. Elle permet également d\textquotesingle{}appliquer des filtres tels que le prix, la recherche et le tri des produits. 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{product__listing_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}\label{product__listing_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0} 
+\index{product\_listing.php@{product\_listing.php}!\$connection@{\$connection}}
+\index{\$connection@{\$connection}!product\_listing.php@{product\_listing.php}}
+\doxysubsubsection{\texorpdfstring{\$connection}{\$connection}}
+{\footnotesize\ttfamily \$connection = mysqli\+\_\+connect(\$host, \$user, \$password, \$database)}
+
+\Hypertarget{product__listing_8php_a7691c0162d89de0b6ba47edcd8ba8878}\label{product__listing_8php_a7691c0162d89de0b6ba47edcd8ba8878} 
+\index{product\_listing.php@{product\_listing.php}!\$database@{\$database}}
+\index{\$database@{\$database}!product\_listing.php@{product\_listing.php}}
+\doxysubsubsection{\texorpdfstring{\$database}{\$database}}
+{\footnotesize\ttfamily \$database = \textquotesingle{}E-\/commerce\textquotesingle{}}
+
+\Hypertarget{product__listing_8php_a711797613cb863ca0756df789c396bf2}\label{product__listing_8php_a711797613cb863ca0756df789c396bf2} 
+\index{product\_listing.php@{product\_listing.php}!\$host@{\$host}}
+\index{\$host@{\$host}!product\_listing.php@{product\_listing.php}}
+\doxysubsubsection{\texorpdfstring{\$host}{\$host}}
+{\footnotesize\ttfamily \$host = \textquotesingle{}localhost\textquotesingle{}}
+
+\Hypertarget{product__listing_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}\label{product__listing_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d} 
+\index{product\_listing.php@{product\_listing.php}!\$password@{\$password}}
+\index{\$password@{\$password}!product\_listing.php@{product\_listing.php}}
+\doxysubsubsection{\texorpdfstring{\$password}{\$password}}
+{\footnotesize\ttfamily \$password = \textquotesingle{}Stage2023\texorpdfstring{$\ast$}{*}\textquotesingle{}}
+
+\Hypertarget{product__listing_8php_a598ca4e71b15a1313ec95f0df1027ca5}\label{product__listing_8php_a598ca4e71b15a1313ec95f0df1027ca5} 
+\index{product\_listing.php@{product\_listing.php}!\$user@{\$user}}
+\index{\$user@{\$user}!product\_listing.php@{product\_listing.php}}
+\doxysubsubsection{\texorpdfstring{\$user}{\$user}}
+{\footnotesize\ttfamily \$user = \textquotesingle{}Ecommerce\textquotesingle{}}
+
+\Hypertarget{product__listing_8php_a165ec09a85cdee81bb2317a25cd10650}\label{product__listing_8php_a165ec09a85cdee81bb2317a25cd10650} 
+\index{product\_listing.php@{product\_listing.php}!else@{else}}
+\index{else@{else}!product\_listing.php@{product\_listing.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}} (isset( \$\+\_\+\+GET\mbox{[} \textquotesingle{}category\textquotesingle{}\mbox{]}) \&\&isset( \$\+\_\+\+GET\mbox{[} \textquotesingle{}subcategory\textquotesingle{}\mbox{]})) else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ echo\ \textcolor{stringliteral}{'<p>Les\ paramètres\ de\ catégorie\ et\ de\ sous-\/catégorie\ sont\ manquants.</p>'}}
+
+\end{DoxyCode}
+\Hypertarget{product__listing_8php_a42667b2dd63a617398f3a8ac725c7d5e}\label{product__listing_8php_a42667b2dd63a617398f3a8ac725c7d5e} 
+\index{product\_listing.php@{product\_listing.php}!if@{if}}
+\index{if@{if}!product\_listing.php@{product\_listing.php}}
+\doxysubsubsection{\texorpdfstring{if}{if}}
+{\footnotesize\ttfamily if(! \$connection) (\begin{DoxyParamCaption}\item[{!}]{\$connection }\end{DoxyParamCaption})}
+

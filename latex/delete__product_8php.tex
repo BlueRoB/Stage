@@ -1,0 +1,82 @@
+\doxysection{/\+Applications/\+XAMPP/xamppfiles/htdocs/\+WEB/\+Stage/view/delete\+\_\+product.php File Reference}
+\hypertarget{delete__product_8php}{}\label{delete__product_8php}\index{/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/delete\_product.php@{/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/delete\_product.php}}
+
+
+Script pour supprimer un produit de la base de données.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}}(! \$connection) \mbox{\hyperlink{delete__product_8php_a4716a4f420978a68070feea84f8fe517}{delete\+Product\+Image}} (\$product\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Supprime l\textquotesingle{}image associée au produit de la base de données. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{delete__product_8php_a711797613cb863ca0756df789c396bf2}{\$host}} = \textquotesingle{}localhost\textquotesingle{}
+\item 
+\mbox{\hyperlink{delete__product_8php_a598ca4e71b15a1313ec95f0df1027ca5}{\$user}} = \textquotesingle{}Ecommerce\textquotesingle{}
+\item 
+\mbox{\hyperlink{delete__product_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{\$password}} = \textquotesingle{}Stage2023\texorpdfstring{$\ast$}{*}\textquotesingle{}
+\item 
+\mbox{\hyperlink{delete__product_8php_a7691c0162d89de0b6ba47edcd8ba8878}{\$database}} = \textquotesingle{}E-\/commerce\textquotesingle{}
+\item 
+\mbox{\hyperlink{delete__product_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}} = mysqli\+\_\+connect(\$host, \$user, \$password, \$database)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Script pour supprimer un produit de la base de données. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{delete__product_8php_a4716a4f420978a68070feea84f8fe517}\label{delete__product_8php_a4716a4f420978a68070feea84f8fe517} 
+\index{delete\_product.php@{delete\_product.php}!deleteProductImage@{deleteProductImage}}
+\index{deleteProductImage@{deleteProductImage}!delete\_product.php@{delete\_product.php}}
+\doxysubsubsection{\texorpdfstring{deleteProductImage()}{deleteProductImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{login_8php_a9f932b726f4a6523e9b11a33c9dd647c}{if}}(! \$connection) delete\+Product\+Image (\begin{DoxyParamCaption}\item[{}]{\$product\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Supprime l\textquotesingle{}image associée au produit de la base de données. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$product\+\_\+id} & Identifiant du produit. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{delete__product_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}\label{delete__product_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0} 
+\index{delete\_product.php@{delete\_product.php}!\$connection@{\$connection}}
+\index{\$connection@{\$connection}!delete\_product.php@{delete\_product.php}}
+\doxysubsubsection{\texorpdfstring{\$connection}{\$connection}}
+{\footnotesize\ttfamily \$connection = mysqli\+\_\+connect(\$host, \$user, \$password, \$database)}
+
+Connexion à la base de données. \Hypertarget{delete__product_8php_a7691c0162d89de0b6ba47edcd8ba8878}\label{delete__product_8php_a7691c0162d89de0b6ba47edcd8ba8878} 
+\index{delete\_product.php@{delete\_product.php}!\$database@{\$database}}
+\index{\$database@{\$database}!delete\_product.php@{delete\_product.php}}
+\doxysubsubsection{\texorpdfstring{\$database}{\$database}}
+{\footnotesize\ttfamily \$database = \textquotesingle{}E-\/commerce\textquotesingle{}}
+
+Nom de la base de données. \Hypertarget{delete__product_8php_a711797613cb863ca0756df789c396bf2}\label{delete__product_8php_a711797613cb863ca0756df789c396bf2} 
+\index{delete\_product.php@{delete\_product.php}!\$host@{\$host}}
+\index{\$host@{\$host}!delete\_product.php@{delete\_product.php}}
+\doxysubsubsection{\texorpdfstring{\$host}{\$host}}
+{\footnotesize\ttfamily \$host = \textquotesingle{}localhost\textquotesingle{}}
+
+Adresse du serveur de base de données. \Hypertarget{delete__product_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}\label{delete__product_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d} 
+\index{delete\_product.php@{delete\_product.php}!\$password@{\$password}}
+\index{\$password@{\$password}!delete\_product.php@{delete\_product.php}}
+\doxysubsubsection{\texorpdfstring{\$password}{\$password}}
+{\footnotesize\ttfamily \$password = \textquotesingle{}Stage2023\texorpdfstring{$\ast$}{*}\textquotesingle{}}
+
+Mot de passe de la base de données. \Hypertarget{delete__product_8php_a598ca4e71b15a1313ec95f0df1027ca5}\label{delete__product_8php_a598ca4e71b15a1313ec95f0df1027ca5} 
+\index{delete\_product.php@{delete\_product.php}!\$user@{\$user}}
+\index{\$user@{\$user}!delete\_product.php@{delete\_product.php}}
+\doxysubsubsection{\texorpdfstring{\$user}{\$user}}
+{\footnotesize\ttfamily \$user = \textquotesingle{}Ecommerce\textquotesingle{}}
+
+Nom d\textquotesingle{}utilisateur de la base de données. 

@@ -1,30 +1,38 @@
 <?php
-$host = 'localhost';
-$user = 'Ecommerce';
-$password = 'Stage2023*';
-$database = 'E-commerce';
+/**
+ * @file edit_product.php
+ * @brief Page pour modifier un produit existant dans la base de données.
+ */
 
-$connection = mysqli_connect($host, $user, $password, $database);
+$host = 'localhost'; /**< Adresse du serveur de base de données. */
+$user = 'Ecommerce'; /**< Nom d'utilisateur de la base de données. */
+$password = 'Stage2023*'; /**< Mot de passe de la base de données. */
+$database = 'E-commerce'; /**< Nom de la base de données. */
 
+$connection = mysqli_connect($host, $user, $password, $database); /**< Connexion à la base de données. */
+
+// Vérification de la connexion à la base de données
 if (!$connection) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
+$product = null; /**< Tableau pour stocker les informations du produit. */
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $product_id = $_POST['product_id'];
 
-    // Retrieve the product information from the database
+    // Récupérer les informations du produit depuis la base de données
     $query = "SELECT * FROM products WHERE product_id = '$product_id'";
     $result = mysqli_query($connection, $query);
     $product = mysqli_fetch_assoc($result);
 
-    // Check if the product exists
+    // Vérifier si le produit existe
     if (!$product) {
         echo "Product not found.";
         exit;
     }
 } else {
-    // If the request method is not POST, redirect the user back to the view products page
+    // Si la méthode de requête n'est pas POST, rediriger l'utilisateur vers la page de visualisation des produits
     header("Location: admin.php?tab=view_products");
     exit;
 }

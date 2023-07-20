@@ -1,0 +1,58 @@
+\doxysection{/\+Applications/\+XAMPP/xamppfiles/htdocs/\+WEB/\+Stage/view/add.product.\+php File Reference}
+\hypertarget{add_8product_8php}{}\label{add_8product_8php}\index{/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/add.product.php@{/Applications/XAMPP/xamppfiles/htdocs/WEB/Stage/view/add.product.php}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{add_8product_8php_a01d6af4b83d900dee8e0da689894ff61}{\$host}} = \textquotesingle{}localhost\textquotesingle{}
+\item 
+\mbox{\hyperlink{add_8product_8php_a6fccfa6d6f19a0faaf3a85a04093d56d}{\$user}} = \textquotesingle{}Ecommerce\textquotesingle{}
+\item 
+\mbox{\hyperlink{add_8product_8php_a99f6264ab0c9eac3199f38350ea0703d}{\$password}} = \textquotesingle{}Stage2023\texorpdfstring{$\ast$}{*}\textquotesingle{}
+\item 
+\mbox{\hyperlink{add_8product_8php_ae9e9bfe9472fbb797496dd93640cde9a}{\$database}} = \textquotesingle{}E-\/commerce\textquotesingle{}
+\item 
+\mbox{\hyperlink{add_8product_8php_ad41493489446c1445e397080df6f03d1}{\$connection}} = mysqli\+\_\+connect(\$host, \$user, \$password, \$database)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ce fichier contient le code pour insérer un nouveau produit dans la base de données. 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{add_8product_8php_ad41493489446c1445e397080df6f03d1}\label{add_8product_8php_ad41493489446c1445e397080df6f03d1} 
+\index{add.product.php@{add.product.php}!\$connection@{\$connection}}
+\index{\$connection@{\$connection}!add.product.php@{add.product.php}}
+\doxysubsubsection{\texorpdfstring{\$connection}{\$connection}}
+{\footnotesize\ttfamily mysqli \$connection = mysqli\+\_\+connect(\$host, \$user, \$password, \$database)}
+
+Objet de connexion à la base de données My\+SQL. Vérifie si un fichier image a été sélectionné pour le produit. Si oui, traite et enregistre le fichier, puis insère les données du produit dans la base de données.
+
+Vérifie si le type du fichier image est autorisé. Si c\textquotesingle{}est le cas, déplace le fichier téléchargé vers le répertoire cible et effectue l\textquotesingle{}insertion dans la base de données.
+
+Déplace le fichier téléchargé vers le répertoire cible. Si le déplacement réussit, insère les données du produit dans la base de données. Sinon, affiche un message d\textquotesingle{}erreur.
+
+Exécute la requête d\textquotesingle{}insertion dans la base de données. Si l\textquotesingle{}insertion réussit, ferme la connexion à la base de données, redirige vers la page d\textquotesingle{}administration et arrête l\textquotesingle{}exécution du script. Sinon, affiche un message d\textquotesingle{}erreur SQL.\Hypertarget{add_8product_8php_ae9e9bfe9472fbb797496dd93640cde9a}\label{add_8product_8php_ae9e9bfe9472fbb797496dd93640cde9a} 
+\index{add.product.php@{add.product.php}!\$database@{\$database}}
+\index{\$database@{\$database}!add.product.php@{add.product.php}}
+\doxysubsubsection{\texorpdfstring{\$database}{\$database}}
+{\footnotesize\ttfamily string \$database = \textquotesingle{}E-\/commerce\textquotesingle{}}
+
+Nom de la base de données à laquelle se connecter. \Hypertarget{add_8product_8php_a01d6af4b83d900dee8e0da689894ff61}\label{add_8product_8php_a01d6af4b83d900dee8e0da689894ff61} 
+\index{add.product.php@{add.product.php}!\$host@{\$host}}
+\index{\$host@{\$host}!add.product.php@{add.product.php}}
+\doxysubsubsection{\texorpdfstring{\$host}{\$host}}
+{\footnotesize\ttfamily string \$host = \textquotesingle{}localhost\textquotesingle{}}
+
+Adresse de l\textquotesingle{}hôte My\+SQL pour la connexion à la base de données. \Hypertarget{add_8product_8php_a99f6264ab0c9eac3199f38350ea0703d}\label{add_8product_8php_a99f6264ab0c9eac3199f38350ea0703d} 
+\index{add.product.php@{add.product.php}!\$password@{\$password}}
+\index{\$password@{\$password}!add.product.php@{add.product.php}}
+\doxysubsubsection{\texorpdfstring{\$password}{\$password}}
+{\footnotesize\ttfamily string \$password = \textquotesingle{}Stage2023\texorpdfstring{$\ast$}{*}\textquotesingle{}}
+
+Mot de passe pour la connexion à la base de données. \Hypertarget{add_8product_8php_a6fccfa6d6f19a0faaf3a85a04093d56d}\label{add_8product_8php_a6fccfa6d6f19a0faaf3a85a04093d56d} 
+\index{add.product.php@{add.product.php}!\$user@{\$user}}
+\index{\$user@{\$user}!add.product.php@{add.product.php}}
+\doxysubsubsection{\texorpdfstring{\$user}{\$user}}
+{\footnotesize\ttfamily string \$user = \textquotesingle{}Ecommerce\textquotesingle{}}
+
+Nom d\textquotesingle{}utilisateur pour la connexion à la base de données. 
